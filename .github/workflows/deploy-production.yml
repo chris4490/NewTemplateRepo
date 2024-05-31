@@ -20,7 +20,7 @@ env:
 jobs:
   check:
     name: Check For Changes
-    if: ${{ !inputs.force_import }}
+    if: ${{ !github.event.inputs.force_import }}
     runs-on: ubuntu-latest
     outputs:
       has_changes: ${{ steps.check.outputs.has_changes }}
@@ -32,20 +32,17 @@ jobs:
 
       - name: Check For Changes
         id: check
-        shell: bash
         run: |
           echo 'Checking for project files to deploy'
           if [ ! -d "${{ env.FILES_PATH }}" ]; then
-            MSG='There are no project files to deploy in the `${{ env.FILES_PATH }}` directory.'
-            echo "$MSG"
+            echo 'There are no project files to deploy in the ${{ env.FILES_PATH }} directory.'
             echo '## Deployment Skipped' >> $GITHUB_STEP_SUMMARY
-            echo ":information_source: $MSG" >> $GITHUB_STEP_SUMMARY
+            echo "has_changes=false" >> $GITHUB_OUTPUT
           else
             if git diff --quiet HEAD~1 HEAD -- "${{ env.FILES_PATH }}"; then
-              MSG='There were no changes in the latest commit to files in the `${{ env.FILES_PATH }}` directory.'
-              echo "$MSG"
+              echo 'There were no changes in the latest commit to files in the ${{ env.FILES_PATH }} directory.'
               echo '## Deployment Skipped' >> $GITHUB_STEP_SUMMARY
-              echo ":information_source: $MSG" >> $GITHUB_STEP_SUMMARY
+              echo "has_changes=false" >> $GITHUB_OUTPUT
             else
               echo 'has_changes=true' >> $GITHUB_OUTPUT
             fi
@@ -53,7 +50,7 @@ jobs:
 
   validate:
     name: Validate Snapshot 
-    if: ${{ inputs.force_import || needs.check.outputs.has_changes == 'true' }}
+    if: ${{ (always() && inputs.force_import) || needs.check.outputs.has_changes == 'true' }}
     needs: check
     runs-on: ubuntu-latest
     steps:
