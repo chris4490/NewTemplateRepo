@@ -2,6 +2,7 @@
   "flows": [
     "add-passkeys",
     "combined-flow-v2",
+    "for-alain",
     "live-flow",
     "my-demo-flow",
     "my-new-flow",

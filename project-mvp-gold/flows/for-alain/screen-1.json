@@ -1,6 +1,6 @@
 {
   "componentsVersion": "2.0.270",
-  "flowId": "combined-flow-v2",
+  "flowId": "for-alain",
   "htmlTemplate": {
     "1sMmkeVxVT": {
       "custom": {},
@@ -25,7 +25,7 @@
         "resolvedName": "ErrorMessage"
       }
     },
-    "KQITrFxHUR": {
+    "LmrSIGOWZb": {
       "custom": {},
       "displayName": "Text",
       "hidden": false,
@@ -34,9 +34,10 @@
       "nodes": [],
       "parent": "ROOT",
       "props": {
-        "children": "POST person/v2/sesssion (person_id)",
+        "align": "center",
+        "children": "Screen body",
         "full-width": false,
-        "id": "KQITrFxHUR",
+        "id": "LmrSIGOWZb",
         "italic": false,
         "mode": "primary",
         "text-align": "center",
@@ -53,9 +54,7 @@
       "isCanvas": true,
       "linkedNodes": {},
       "nodes": [
-        "iRqn9togHW",
-        "KQITrFxHUR",
-        "v4zsJKCHEw",
+        "LmrSIGOWZb",
         "1sMmkeVxVT"
       ],
       "props": {
@@ -74,64 +73,9 @@
       "type": {
         "resolvedName": "Container"
       }
-    },
-    "iRqn9togHW": {
-      "custom": {},
-      "displayName": "Text",
-      "hidden": false,
-      "isCanvas": false,
-      "linkedNodes": {},
-      "nodes": [],
-      "parent": "ROOT",
-      "props": {
-        "align": "center",
-        "children": "Create Session",
-        "full-width": false,
-        "id": "iRqn9togHW",
-        "italic": false,
-        "mode": "primary",
-        "text-align": "center",
-        "variant": "body1"
-      },
-      "type": {
-        "resolvedName": "Text"
-      }
-    },
-    "v4zsJKCHEw": {
-      "custom": {
-        "type": "button"
-      },
-      "displayName": "Button",
-      "hidden": false,
-      "isCanvas": false,
-      "linkedNodes": {},
-      "nodes": [],
-      "parent": "ROOT",
-      "props": {
-        "auto-submit": true,
-        "children": "Click Me",
-        "color": "primary",
-        "data-type": "button",
-        "formNoValidate": false,
-        "full-width": false,
-        "id": "v4zsJKCHEw",
-        "size": "md",
-        "variant": "contained"
-      },
-      "type": {
-        "resolvedName": "Button"
-      }
     }
   },
-  "id": "SC2eYmliT6kCYJC6GWTER47KFGSKf",
+  "id": "SC2hFNHzmC0tAQW9FEchD2FZEV4LM",
   "inputs": [],
-  "interactions": [
-    {
-      "icon": "",
-      "id": "v4zsJKCHEw",
-      "label": "Click Me",
-      "subType": "",
-      "type": ""
-    }
-  ]
+  "interactions": []
 }
