@@ -53,7 +53,7 @@ jobs:
 
   validate:
     name: Validate Snapshot 
-    if: ${{ (always() && inputs.force_import) || needs.check.outputs.has_changes == 'true' }}
+    if: ${{ inputs.force_import) || needs.check.outputs.has_changes == 'true' }}
     needs: check
     runs-on: ubuntu-latest
     steps:
