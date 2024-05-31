@@ -1,0 +1,20 @@
+{
+  "configuration": {
+    "authentication": {
+      "apiKey": {},
+      "basic": {},
+      "method": "bearerToken"
+    },
+    "baseUrl": "https://connector-transformers.preview.descope.org/api/",
+    "headers": [],
+    "hmacSignEntireRequest": false,
+    "includeHeadersInContext": true,
+    "insecure": false
+  },
+  "contentVersion": "",
+  "description": "",
+  "id": "CI2fnc9SxtnAfhbQCopC8jo2ZKSGV",
+  "name": "Person Service Mock",
+  "status": "enabled",
+  "templateId": "http"
+}

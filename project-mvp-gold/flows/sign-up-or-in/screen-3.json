@@ -1,0 +1,182 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "sign-up-or-in",
+  "htmlTemplate": {
+    "4I3hQX95BZ": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "jqtNmu7Gql",
+        "UZHgESPGoK"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "center",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "4I3hQX95BZ",
+        "justify": "between",
+        "paddingX": "4",
+        "paddingY": "2",
+        "spaceBetween": "8",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "7mIfMql_Ht": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "To complete your sign up, please provide the following information",
+        "full-width": false,
+        "id": "7mIfMql_Ht",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "NQ8ig4chcI": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Full Name Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "full-width": true,
+        "id": "NQ8ig4chcI",
+        "label": "",
+        "max": 100,
+        "name": "fullName",
+        "placeholder": "Full Name",
+        "required": false,
+        "size": "md",
+        "type": "text"
+      },
+      "type": {
+        "resolvedName": "FullNameInput"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "7mIfMql_Ht",
+        "NQ8ig4chcI",
+        "4I3hQX95BZ",
+        "vzbXHpGdM8"
+      ],
+      "props": {
+        "align": "center",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "8",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "UZHgESPGoK": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "4I3hQX95BZ",
+      "props": {
+        "alt": "Image",
+        "id": "UZHgESPGoK",
+        "src": "asset:img-0a427e4128082ea77b269733eaefb5caeb5f75c073dadcd217540009d030d5a5.png",
+        "width": "30px"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "jqtNmu7Gql": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "4I3hQX95BZ",
+      "props": {
+        "children": "Phone number: {{inputs.phone}}",
+        "full-width": false,
+        "id": "jqtNmu7Gql",
+        "italic": false,
+        "mode": "secondary",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "vzbXHpGdM8": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Submit",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "vzbXHpGdM8",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    }
+  },
+  "id": "SC2fKgr2kUiEcm51PDAEAtMp5izJr",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "vzbXHpGdM8",
+      "label": "Submit",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

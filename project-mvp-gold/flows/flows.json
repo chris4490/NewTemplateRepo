@@ -1,0 +1,17 @@
+{
+  "flows": [
+    "add-passkeys",
+    "combined-flow-v2",
+    "live-flow",
+    "my-new-flow",
+    "my-new-flow1",
+    "new-new",
+    "saml-config",
+    "sign-in",
+    "sign-up",
+    "sign-up-or-in",
+    "step-up",
+    "test-over-here",
+    "zzzzzz"
+  ]
+}

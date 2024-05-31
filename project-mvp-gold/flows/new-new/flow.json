@@ -1,0 +1,138 @@
+{
+  "description": "",
+  "disabled": false,
+  "dsl": {
+    "apiVersion": 0,
+    "startTask": "2",
+    "tasks": {
+      "0": {
+        "ID": "0",
+        "action": "logged-in",
+        "name": "End",
+        "next": {},
+        "type": "automated",
+        "view": {
+          "x": 1548,
+          "y": -12
+        }
+      },
+      "1": {
+        "ID": "1",
+        "name": "New Screen",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "ZnC1Kf_C5T",
+              "taskId": "0"
+            }
+          ]
+        },
+        "screenId": "SC2h9h3U7pZZOuVDTj1q1W8TA0YfG",
+        "type": "screen",
+        "view": {
+          "x": 1164,
+          "y": -348
+        }
+      },
+      "2": {
+        "ID": "2",
+        "action": "sign-up-or-in-otp-email",
+        "arguments": {
+          "extraTemplateVals": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "providerId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "templateId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          }
+        },
+        "name": "Sign Up or In / OTP / Email",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "3"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": -288,
+          "y": -456
+        }
+      },
+      "3": {
+        "ID": "3",
+        "name": "Verify OTP",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "resend",
+              "taskId": "2"
+            },
+            {
+              "interactionId": "oneTimeCodeId",
+              "taskId": "4"
+            }
+          ]
+        },
+        "screenId": "SC2h9h3aYHTB4tGLtFwIxuSKxsmlY",
+        "type": "screen",
+        "view": {
+          "x": 192,
+          "y": -480
+        }
+      },
+      "4": {
+        "ID": "4",
+        "action": "verify-code-otp-email",
+        "name": "Verify Code / OTP / Email",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "1"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 672,
+          "y": -384
+        }
+      },
+      "start": {
+        "ID": "start",
+        "name": "start",
+        "next": {
+          "rules": [
+            {
+              "taskId": "2"
+            }
+          ]
+        },
+        "view": {
+          "x": -636,
+          "y": -300
+        }
+      }
+    }
+  },
+  "etag": "manual",
+  "fingerprint": false,
+  "id": "new-new",
+  "name": "new-new",
+  "translate": false,
+  "translateConnectorID": "",
+  "translateSourceLang": "",
+  "translateTargetLangs": [],
+  "widget": false
+}

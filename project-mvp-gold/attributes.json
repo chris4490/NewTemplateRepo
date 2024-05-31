@@ -1,0 +1,28 @@
+{
+  "user": [
+    {
+      "displayName": "email_consent",
+      "editPermissions": [],
+      "name": "emailConsent",
+      "options": [],
+      "type": "boolean",
+      "viewPermissions": []
+    },
+    {
+      "displayName": "gfmPersonId",
+      "editPermissions": [],
+      "name": "gfmPersonId",
+      "options": [],
+      "type": "number",
+      "viewPermissions": []
+    },
+    {
+      "displayName": "myAttribute",
+      "editPermissions": [],
+      "name": "myAttribute",
+      "options": [],
+      "type": "boolean",
+      "viewPermissions": []
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "componentsVersion": "2.0.261",
+  "flowId": "combined-flow-v2",
+  "htmlTemplate": {
+    "1sMmkeVxVT": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "align": "center",
+        "data-type": "error-message",
+        "full-width": false,
+        "hide-when-empty": true,
+        "id": "1sMmkeVxVT",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "LmrSIGOWZb": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "y5AR4jJByx",
+      "props": {
+        "align": "center",
+        "children": "Phone Number",
+        "full-width": false,
+        "id": "LmrSIGOWZb",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "ODpHRNvD-L": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "sTb2aFfs5t",
+      "props": {
+        "auto-submit": true,
+        "children": "Send Code",
+        "color": "primary",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "ODpHRNvD-L",
+        "shape": "",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "y5AR4jJByx",
+        "1sMmkeVxVT",
+        "eEik1XlYbK",
+        "sTb2aFfs5t"
+      ],
+      "props": {
+        "align": "center",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "8",
+        "space-between": "md",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "eEik1XlYbK": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "eEik1XlYbK",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "sTb2aFfs5t": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "ODpHRNvD-L"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "sTb2aFfs5t",
+        "justify": "end",
+        "paddingX": "4",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "xV41q7hNd-": {
+      "custom": {},
+      "displayName": "Phone Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "y5AR4jJByx",
+      "props": {
+        "bordered": true,
+        "country-input-placeholder": "",
+        "data-errormessage-missing-value": "Required",
+        "data-errormessage-pattern-mismatch-too-short": "Please enter a valid phone",
+        "default-code": "allCountries",
+        "full-width": true,
+        "id": "xV41q7hNd-",
+        "label": "",
+        "maxlength": "20",
+        "minlength": "6",
+        "name": "phone",
+        "phone-input-placeholder": "2015550123",
+        "size": "md",
+        "type": "tel",
+        "variant": "countrySelection"
+      },
+      "type": {
+        "resolvedName": "Phone"
+      }
+    },
+    "y5AR4jJByx": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "LmrSIGOWZb",
+        "xV41q7hNd-"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "y5AR4jJByx",
+        "justify": "start",
+        "paddingX": "4",
+        "paddingY": "8",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    }
+  },
+  "id": "SC2eprfYKGW2kfRMWZMxu0C8NaYRT",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "ODpHRNvD-L",
+      "label": "Send Code",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

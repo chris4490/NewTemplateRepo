@@ -1,0 +1,600 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "saml-config",
+  "htmlTemplate": {
+    "-NpP0qs-QR": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "4. Choose \"Manually Enter\" and place the following value under \"ACS URLs\": ",
+        "full-width": false,
+        "id": "-NpP0qs-QR",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "-wOPtUoo6r": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "1. Login to Ping One Console, in left pane under \"Connections\" choose \"Applications\":",
+        "full-width": false,
+        "id": "-wOPtUoo6r",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "1sMmkeVxVT": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "id": "1sMmkeVxVT",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "7-8Mf2hcco": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Ping5",
+        "id": "7-8Mf2hcco",
+        "src": "https://imgs.descope.com/flows/saml-config/Ping5.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "94nAlv5fDN": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "{{sso.acsUrl}}",
+        "full-width": false,
+        "id": "94nAlv5fDN",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "EzMCyLH7Cg": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "TywxI4jr4S",
+      "props": {
+        "children": "Back",
+        "data-type": "button",
+        "formNoValidate": true,
+        "full-width": false,
+        "id": "EzMCyLH7Cg",
+        "mode": "primary",
+        "size": "md",
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "FF6Sd0OHkh": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "TywxI4jr4S",
+      "props": {
+        "children": "Next",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "FF6Sd0OHkh",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "JwEfD-KADU": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "5. Place the following value under \"Entity ID\":",
+        "full-width": false,
+        "id": "JwEfD-KADU",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "LL-c7_QQZG": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "2. Create new Application:",
+        "full-width": false,
+        "id": "LL-c7_QQZG",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "LmrSIGOWZb": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Ping Identity configuration",
+        "full-width": false,
+        "id": "LmrSIGOWZb",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "h2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "RC9QruEvb6": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "{{sso.descopeEntityId}} ",
+        "full-width": false,
+        "id": "RC9QruEvb6",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "LmrSIGOWZb",
+        "-wOPtUoo6r",
+        "iESRXDwx3D",
+        "LL-c7_QQZG",
+        "Seb1YOrbd7",
+        "pd8SPe0pUZ",
+        "_U5hUu5tos",
+        "-NpP0qs-QR",
+        "94nAlv5fDN",
+        "vZzhsSFY_D",
+        "JwEfD-KADU",
+        "RC9QruEvb6",
+        "7-8Mf2hcco",
+        "yaPa_pwv_S",
+        "fRCjhmYXcY",
+        "a0nnRFx1Ih",
+        "x5yZFaUv86",
+        "ypJe1ta-b9",
+        "qYCz8O0i_r",
+        "oJat1cxky0",
+        "SO9dcEbfCl",
+        "hCn369N3D6",
+        "1sMmkeVxVT",
+        "TywxI4jr4S"
+      ],
+      "props": {
+        "align": "start",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "5",
+        "paddingY": "5",
+        "spaceBetween": "12",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "SO9dcEbfCl": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "9. make sure your app is enabled:",
+        "full-width": false,
+        "id": "SO9dcEbfCl",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "Seb1YOrbd7": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Ping2",
+        "id": "Seb1YOrbd7",
+        "src": "https://imgs.descope.com/flows/saml-config/Ping2.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "TywxI4jr4S": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "EzMCyLH7Cg",
+        "FF6Sd0OHkh"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "TywxI4jr4S",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "3.5",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "_U5hUu5tos": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Ping3",
+        "id": "_U5hUu5tos",
+        "src": "https://imgs.descope.com/flows/saml-config/Ping3.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "a0nnRFx1Ih": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "77. Fill in mappings according to next image (phone param one is optional) and save:",
+        "full-width": false,
+        "id": "a0nnRFx1Ih",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "fRCjhmYXcY": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Ping6",
+        "id": "fRCjhmYXcY",
+        "src": "https://imgs.descope.com/flows/saml-config/Ping6.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "hCn369N3D6": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Ping9",
+        "id": "hCn369N3D6",
+        "src": "https://imgs.descope.com/flows/saml-config/Ping9.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "iESRXDwx3D": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Ping1",
+        "id": "iESRXDwx3D",
+        "src": "https://imgs.descope.com/flows/saml-config/Ping1.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "oJat1cxky0": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Metadata URL for IDP",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "data-errormessage-pattern-mismatch": "Must be a valid URL",
+        "full-width": true,
+        "id": "oJat1cxky0",
+        "label": "IDP Metadata URL",
+        "max": 100,
+        "name": "idpMetadataURL",
+        "placeholder": "IDP Metadata URL",
+        "required": true,
+        "size": "md",
+        "type": "url"
+      },
+      "type": {
+        "resolvedName": "IDPMetadataUrlInput"
+      }
+    },
+    "pd8SPe0pUZ": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "3.Choose SAML Application and fill in app name and description, and press \"Configure\": ",
+        "full-width": false,
+        "id": "pd8SPe0pUZ",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "qYCz8O0i_r": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Ping8",
+        "id": "qYCz8O0i_r",
+        "src": "https://imgs.descope.com/flows/saml-config/Ping8.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "vZzhsSFY_D": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Ping4",
+        "id": "vZzhsSFY_D",
+        "src": "https://imgs.descope.com/flows/saml-config/Ping4.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "x5yZFaUv86": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Ping7",
+        "id": "x5yZFaUv86",
+        "src": "https://imgs.descope.com/flows/saml-config/Ping7.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "yaPa_pwv_S": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "6. Press \"Attribute Mappings\" tab, and edit it:",
+        "full-width": false,
+        "id": "yaPa_pwv_S",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "ypJe1ta-b9": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "8. Switch to \"Configuration\" tab, and copy the \"IDP Metadata URL\" and paste here: ",
+        "full-width": false,
+        "id": "ypJe1ta-b9",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    }
+  },
+  "id": "SC2fKgr6xhNQcHqi2ZbWDBn157TAt",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "EzMCyLH7Cg",
+      "label": "Back",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "FF6Sd0OHkh",
+      "label": "Next",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

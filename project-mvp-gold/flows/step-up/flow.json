@@ -1,0 +1,306 @@
+{
+  "description": "Default Descope Step Up flow; used for extra user validation, via Magic Link, Social Logins or Biometrics, before performing high risk actions in the application.",
+  "disabled": false,
+  "dsl": {
+    "apiVersion": 0,
+    "startTask": "0",
+    "tasks": {
+      "0": {
+        "ID": "0",
+        "action": "loadUser",
+        "name": "Load User",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "1"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 48,
+          "y": -60
+        }
+      },
+      "1": {
+        "ID": "1",
+        "action": "setStepUp",
+        "arguments": {
+          "customClaims": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "stepUp": {
+            "ArgType": "",
+            "type": "inline",
+            "value": "true"
+          }
+        },
+        "name": "Add login options to flow",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "2"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 456,
+          "y": -60
+        }
+      },
+      "10": {
+        "ID": "10",
+        "name": "Verified Successfully",
+        "next": {},
+        "screenId": "SC2fKgr38jyxSzPQnji1ftj0keAPS",
+        "type": "screen",
+        "view": {
+          "x": 1776,
+          "y": -204
+        }
+      },
+      "11": {
+        "ID": "11",
+        "action": "oauth-start-sign-in",
+        "arguments": {
+          "exchangeStepId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": "11.end"
+          },
+          "redirectUrl": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          }
+        },
+        "name": "Sign In / OAuth",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "11.end"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 1380,
+          "y": 288
+        }
+      },
+      "11.end": {
+        "ID": "11.end",
+        "action": "exchange-oauth-code",
+        "name": "Sign In / OAuth",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "7"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 1380,
+          "y": 288
+        }
+      },
+      "2": {
+        "ID": "2",
+        "name": "Step Up",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "QLItcaT9fe",
+              "taskId": "8"
+            },
+            {
+              "interactionId": "Rnig-N9uPU",
+              "taskId": "5"
+            },
+            {
+              "interactionId": "MoYs6IGLo1",
+              "taskId": "11"
+            },
+            {
+              "interactionId": "Xa-ZeVfQ22",
+              "taskId": "11"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr6rfOWiGwQPBwJUPBr2RE3V",
+        "type": "screen",
+        "view": {
+          "x": 948,
+          "y": -96
+        }
+      },
+      "5": {
+        "ID": "5",
+        "action": "webauthn-sign-in-start",
+        "arguments": {
+          "finishStepId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": "5.end"
+          }
+        },
+        "name": "Sign In/ Passkeys (WebAuthn)",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "5.end"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 1380,
+          "y": -528
+        }
+      },
+      "5.end": {
+        "ID": "5.end",
+        "action": "webauthn-sign-in-finish",
+        "name": "Sign In/ Passkeys (WebAuthn)",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "7"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 1380,
+          "y": -528
+        }
+      },
+      "7": {
+        "ID": "7",
+        "action": "logged-in",
+        "name": "Generate JWT",
+        "next": {},
+        "type": "automated",
+        "view": {
+          "x": 2220,
+          "y": 60
+        }
+      },
+      "8": {
+        "ID": "8",
+        "action": "sign-in-magic-link-email",
+        "arguments": {
+          "providerId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "templateId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "uri": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "verifyStepId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": "8.end"
+          }
+        },
+        "name": "Sign In / Magic Link / Email",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "9"
+            },
+            {
+              "interactionId": "success",
+              "taskId": "8.end"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 1380,
+          "y": 12
+        }
+      },
+      "8.end": {
+        "ID": "8.end",
+        "action": "verify-magic-link",
+        "name": "Sign In / Magic Link / Email",
+        "next": {},
+        "type": "automated",
+        "view": {
+          "x": 1380,
+          "y": 12
+        }
+      },
+      "9": {
+        "ID": "9",
+        "name": "Magic Link Sent",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "EbW8KMdjAx",
+              "taskId": "2"
+            },
+            {
+              "interactionId": "polling",
+              "taskId": "10"
+            },
+            {
+              "interactionId": "resend",
+              "taskId": "8"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr4cGla3DN4XgQs2Ud2QNDhp",
+        "type": "screen",
+        "view": {
+          "x": 1380,
+          "y": -336
+        }
+      },
+      "start": {
+        "ID": "start",
+        "name": "start",
+        "next": {
+          "rules": [
+            {
+              "taskId": "0"
+            }
+          ]
+        },
+        "view": {
+          "x": -132,
+          "y": -12
+        }
+      }
+    }
+  },
+  "etag": "\"74b7ced9425af80b95310708aa0a6a0b\"",
+  "fingerprint": false,
+  "id": "step-up",
+  "name": "Step Up",
+  "translate": false,
+  "translateConnectorID": "",
+  "translateSourceLang": "",
+  "translateTargetLangs": [],
+  "widget": false
+}

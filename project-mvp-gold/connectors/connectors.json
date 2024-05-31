@@ -1,0 +1,7 @@
+{
+  "connectors": [
+    "audit-webhook-CI2hC5bhEpBc6F1BXvLYWJiyAFCCl",
+    "hibp-CI2hC5Z9bQ77cAzTGACnuPbcuClKp",
+    "http-CI2fnc9SxtnAfhbQCopC8jo2ZKSGV"
+  ]
+}

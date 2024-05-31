@@ -1,0 +1,902 @@
+{
+  "description": "Default Descope Sign Up or In flow; enables users to sign up or in via Magic Link, Social Logins or Biometrics. For Biometrics, Email is verified if needed. Registration information includes Full Name and Phone (verification via OTP).",
+  "disabled": false,
+  "dsl": {
+    "apiVersion": 0,
+    "startTask": "0",
+    "tasks": {
+      "0": {
+        "ID": "0",
+        "inputKeys": [
+          "email"
+        ],
+        "name": "Welcome Screen",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "COcMh1vzSn",
+              "taskId": "24"
+            },
+            {
+              "interactionId": "gDYTgzMsxf",
+              "taskId": "30"
+            },
+            {
+              "interactionId": "058XUDlhFP",
+              "taskId": "35"
+            },
+            {
+              "interactionId": "W8kS07v_i9",
+              "taskId": "35"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr2tgiW3S3EQS48IEScPehf0",
+        "type": "screen",
+        "view": {
+          "x": -588,
+          "y": -48
+        }
+      },
+      "11": {
+        "ID": "11",
+        "action": "risk",
+        "name": "Risk Calculator",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "15"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 1680,
+          "y": -108
+        }
+      },
+      "12": {
+        "ID": "12",
+        "action": "sign-in-otp-sms",
+        "name": "Sign In / OTP / SMS",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "13"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 2460,
+          "y": -120
+        }
+      },
+      "13": {
+        "ID": "13",
+        "contextKeys": [
+          "sentTo.maskedPhone"
+        ],
+        "name": "Verify OTP",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "resend",
+              "taskId": "12"
+            },
+            {
+              "interactionId": "submit",
+              "taskId": "14"
+            },
+            {
+              "interactionId": "L1T9iO4p5U",
+              "taskId": "14"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr2xa7RvBLCW5SfN3NAmwkb2",
+        "type": "screen",
+        "view": {
+          "x": 2856,
+          "y": -120
+        }
+      },
+      "14": {
+        "ID": "14",
+        "action": "verify-code-otp-sms",
+        "name": "Verify Code / OTP / SMS",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "6"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 3252,
+          "y": -120
+        }
+      },
+      "15": {
+        "ID": "15",
+        "conditions": [
+          {
+            "atomicConditions": [
+              {
+                "operator": "greater-than",
+                "predicate": {
+                  "ArgType": "",
+                  "type": "inline",
+                  "value": "0.5"
+                },
+                "target": {
+                  "ArgType": "",
+                  "type": "context",
+                  "value": "riskInfo.riskScore"
+                }
+              }
+            ],
+            "interactionId": "xe95631a51t",
+            "name": "High risk"
+          },
+          {
+            "interactionId": "ELSE",
+            "name": "Low risk"
+          }
+        ],
+        "name": "Is risk high?",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "xe95631a51t",
+              "taskId": "12"
+            },
+            {
+              "interactionId": "ELSE",
+              "taskId": "6"
+            }
+          ]
+        },
+        "type": "condition",
+        "view": {
+          "x": 2064,
+          "y": -108
+        }
+      },
+      "16": {
+        "ID": "16",
+        "name": "User Information",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "vzbXHpGdM8",
+              "taskId": "17"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr2kUiEcm51PDAEAtMp5izJr",
+        "type": "screen",
+        "view": {
+          "x": 3252,
+          "y": -504
+        }
+      },
+      "17": {
+        "ID": "17",
+        "action": "update-user-properties",
+        "name": "Update User / Properties",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "22"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 3660,
+          "y": -504
+        }
+      },
+      "18": {
+        "ID": "18",
+        "conditions": [
+          {
+            "atomicConditions": [
+              {
+                "operator": "is-true",
+                "predicate": {
+                  "ArgType": "",
+                  "type": "inline",
+                  "value": ""
+                },
+                "target": {
+                  "ArgType": "",
+                  "type": "context",
+                  "value": "authInfo.firstSeen"
+                }
+              }
+            ],
+            "interactionId": "xjdp2jjrwyo",
+            "name": "New user"
+          },
+          {
+            "interactionId": "ELSE",
+            "name": "Existing user"
+          }
+        ],
+        "name": "Is new user?",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "xjdp2jjrwyo",
+              "taskId": "7"
+            },
+            {
+              "interactionId": "ELSE",
+              "taskId": "6"
+            }
+          ]
+        },
+        "type": "condition",
+        "view": {
+          "x": 1332,
+          "y": 684
+        }
+      },
+      "21": {
+        "ID": "21",
+        "name": "Promote Biometrics",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "-elJaMwrLU",
+              "taskId": "6"
+            },
+            {
+              "interactionId": "NBlRNCDAZS",
+              "taskId": "23"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr7kkBUosViPj6e0TzvzyhzB",
+        "type": "screen",
+        "view": {
+          "x": 4452,
+          "y": -504
+        }
+      },
+      "22": {
+        "ID": "22",
+        "conditions": [
+          {
+            "atomicConditions": [
+              {
+                "operator": "is-true",
+                "predicate": {
+                  "ArgType": "",
+                  "type": "inline",
+                  "value": ""
+                },
+                "target": {
+                  "ArgType": "",
+                  "type": "context",
+                  "value": "deviceInfo.webAuthnSupport"
+                }
+              }
+            ],
+            "interactionId": "uvztjt3d2d",
+            "name": "Supports Biometrics"
+          },
+          {
+            "interactionId": "ELSE",
+            "name": "Doesn't support Biometrics"
+          }
+        ],
+        "name": "Support of Biometrics",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "uvztjt3d2d",
+              "taskId": "21"
+            },
+            {
+              "interactionId": "ELSE",
+              "taskId": "6"
+            }
+          ]
+        },
+        "type": "condition",
+        "view": {
+          "x": 4044,
+          "y": -504
+        }
+      },
+      "23": {
+        "ID": "23",
+        "action": "webauthn-update-user-start",
+        "arguments": {
+          "finishStepId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": "23.end"
+          }
+        },
+        "name": "Update User/ Passkeys (WebAuthn)",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "23.end"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 4824,
+          "y": -504
+        }
+      },
+      "23.end": {
+        "ID": "23.end",
+        "action": "webauthn-update-user-finish",
+        "name": "Update User/ Passkeys (WebAuthn)",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "6"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 4824,
+          "y": -504
+        }
+      },
+      "24": {
+        "ID": "24",
+        "action": "sign-up-or-in-magic-link-email",
+        "arguments": {
+          "extraTemplateVals": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "providerId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "templateId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "uri": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "verifyStepId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": "24.end"
+          }
+        },
+        "name": "Sign Up or In / Magic Link / Email",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "25"
+            },
+            {
+              "interactionId": "success",
+              "taskId": "24.end"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": -132,
+          "y": -288
+        }
+      },
+      "24.end": {
+        "ID": "24.end",
+        "action": "verify-magic-link",
+        "name": "Sign Up or In / Magic Link / Email",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "5"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": -132,
+          "y": -288
+        }
+      },
+      "25": {
+        "ID": "25",
+        "name": "Magic Link Sent",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "EbW8KMdjAx",
+              "taskId": "0"
+            },
+            {
+              "interactionId": "polling",
+              "taskId": "26"
+            },
+            {
+              "interactionId": "resend",
+              "taskId": "24"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr2QTd1QP3Emby9yvM7uyeAE",
+        "type": "screen",
+        "view": {
+          "x": -132,
+          "y": -600
+        }
+      },
+      "26": {
+        "ID": "26",
+        "name": "Verified Successfully",
+        "next": {},
+        "screenId": "SC2fKgr6z353T9bMq06W11SMctRsb",
+        "type": "screen",
+        "view": {
+          "x": 432,
+          "y": -600
+        }
+      },
+      "27": {
+        "ID": "27",
+        "action": "update-user-otp-sms",
+        "name": "Update User / OTP / SMS",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "28"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 2064,
+          "y": -516
+        }
+      },
+      "28": {
+        "ID": "28",
+        "contextKeys": [
+          "sentTo.maskedPhone"
+        ],
+        "name": "Verify OTP",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "resend",
+              "taskId": "27"
+            },
+            {
+              "interactionId": "submit",
+              "taskId": "29"
+            },
+            {
+              "interactionId": "pnOqEGpL1b",
+              "taskId": "7"
+            },
+            {
+              "interactionId": "L1T9iO4p5U",
+              "taskId": "29"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr84azhvQOkYfs4tcp5dq4PZ",
+        "type": "screen",
+        "view": {
+          "x": 2436,
+          "y": -516
+        }
+      },
+      "29": {
+        "ID": "29",
+        "action": "verify-code-otp-sms",
+        "name": "Verify Code / OTP / SMS",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "16"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 2844,
+          "y": -516
+        }
+      },
+      "30": {
+        "ID": "30",
+        "action": "webauthn-sign-up-or-in-start",
+        "arguments": {
+          "finishStepId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": "30.end"
+          }
+        },
+        "name": "Sign Up or In/ Passkeys (WebAuthn)",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "30.end"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": -132,
+          "y": 24
+        }
+      },
+      "30.end": {
+        "ID": "30.end",
+        "action": "webauthn-sign-up-or-in-finish",
+        "name": "Sign Up or In/ Passkeys (WebAuthn)",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "34"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": -132,
+          "y": 24
+        }
+      },
+      "31": {
+        "ID": "31",
+        "action": "update-user-magic-link-email",
+        "arguments": {
+          "addToLoginIDs": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "extraTemplateVals": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "onMergeUseExisting": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "providerId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "templateId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "uri": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "verifyStepId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": "31.end"
+          }
+        },
+        "name": "Update User / Magic Link / Email",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "32"
+            },
+            {
+              "interactionId": "success",
+              "taskId": "31.end"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 684,
+          "y": 336
+        }
+      },
+      "31.end": {
+        "ID": "31.end",
+        "action": "verify-magic-link",
+        "name": "Update User / Magic Link / Email",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "18"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 684,
+          "y": 336
+        }
+      },
+      "32": {
+        "ID": "32",
+        "name": "Magic Link Sent",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "polling",
+              "taskId": "33"
+            },
+            {
+              "interactionId": "resend",
+              "taskId": "31"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr1bvCMLmmuRtt0VhVSEVueh",
+        "type": "screen",
+        "view": {
+          "x": 696,
+          "y": 108
+        }
+      },
+      "33": {
+        "ID": "33",
+        "name": "Verified Successfully",
+        "next": {},
+        "screenId": "SC2fKgr87F1nddOlR9E5Rn1OSjjkB",
+        "type": "screen",
+        "view": {
+          "x": 1116,
+          "y": 156
+        }
+      },
+      "34": {
+        "ID": "34",
+        "conditions": [
+          {
+            "atomicConditions": [
+              {
+                "operator": "is-true",
+                "predicate": {
+                  "ArgType": "",
+                  "type": "inline",
+                  "value": ""
+                },
+                "target": {
+                  "ArgType": "",
+                  "type": "context",
+                  "value": "authInfo.user.verifiedEmail"
+                }
+              }
+            ],
+            "interactionId": "l06hldh4gqn",
+            "name": "Verified"
+          },
+          {
+            "interactionId": "ELSE",
+            "name": "Not Verified"
+          }
+        ],
+        "name": "Is Email verified?",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "l06hldh4gqn",
+              "taskId": "18"
+            },
+            {
+              "interactionId": "ELSE",
+              "taskId": "31"
+            }
+          ]
+        },
+        "type": "condition",
+        "view": {
+          "x": 300,
+          "y": 312
+        }
+      },
+      "35": {
+        "ID": "35",
+        "action": "oauth-start",
+        "arguments": {
+          "allowSetDefaultProvider": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "defaultProvider": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          },
+          "exchangeStepId": {
+            "ArgType": "",
+            "type": "inline",
+            "value": "35.end"
+          },
+          "prompt": {
+            "ArgType": "",
+            "type": "inline",
+            "value": []
+          },
+          "redirectUrl": {
+            "ArgType": "",
+            "type": "inline",
+            "value": ""
+          }
+        },
+        "name": "Sign Up or In / OAuth",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "35.end"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": -120,
+          "y": 696
+        }
+      },
+      "35.end": {
+        "ID": "35.end",
+        "action": "exchange-oauth-code",
+        "name": "Sign Up or In / OAuth",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "18"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": -120,
+          "y": 696
+        }
+      },
+      "5": {
+        "ID": "5",
+        "conditions": [
+          {
+            "atomicConditions": [
+              {
+                "operator": "is-true",
+                "predicate": {
+                  "ArgType": "",
+                  "type": "inline",
+                  "value": ""
+                },
+                "target": {
+                  "ArgType": "",
+                  "type": "context",
+                  "value": "authInfo.firstSeen"
+                }
+              }
+            ],
+            "interactionId": "1cycrxvv9k2",
+            "name": "New user"
+          },
+          {
+            "interactionId": "ELSE",
+            "name": "Existing user"
+          }
+        ],
+        "name": "Is new user?",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "1cycrxvv9k2",
+              "taskId": "7"
+            },
+            {
+              "interactionId": "ELSE",
+              "taskId": "11"
+            }
+          ]
+        },
+        "type": "condition",
+        "view": {
+          "x": 444,
+          "y": -348
+        }
+      },
+      "6": {
+        "ID": "6",
+        "action": "logged-in",
+        "name": "Generate JWT",
+        "next": {},
+        "type": "automated",
+        "view": {
+          "x": 5208,
+          "y": 120
+        }
+      },
+      "7": {
+        "ID": "7",
+        "inputKeys": [
+          "fullName"
+        ],
+        "name": "User Information - Unverified - Phone Only",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "VZn7G1QGq3",
+              "taskId": "27"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr3ZBc7Tn2RLtueAyiqENrXo",
+        "type": "screen",
+        "view": {
+          "x": 1692,
+          "y": -516
+        }
+      },
+      "start": {
+        "ID": "start",
+        "name": "start",
+        "next": {
+          "rules": [
+            {
+              "taskId": "0"
+            }
+          ]
+        },
+        "view": {
+          "x": -816,
+          "y": 36
+        }
+      }
+    }
+  },
+  "etag": "\"7753aebd73cd9fd10bc58057dee4c97f\"",
+  "fingerprint": false,
+  "id": "sign-up-or-in",
+  "name": "Sign Up or In",
+  "translate": false,
+  "translateConnectorID": "",
+  "translateSourceLang": "",
+  "translateTargetLangs": [],
+  "widget": false
+}

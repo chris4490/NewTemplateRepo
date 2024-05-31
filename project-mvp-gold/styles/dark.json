@@ -1,0 +1,135 @@
+{
+  "components": {
+    "button": {
+      "--descope-button-border-radius": "6px",
+      "--descope-button-font-family": "var(--descope-fonts-font1-family)",
+      "mode": {
+        "primary": {
+          "--descope-button-contrast": "#000000",
+          "--descope-button-dark": "#71AEFF",
+          "--descope-button-highlight": "#00214D",
+          "--descope-button-light": "#004094",
+          "--descope-button-main": "#1F80FF"
+        },
+        "secondary": {
+          "--descope-button-contrast": "#000000",
+          "--descope-button-dark": "#B9A0f3",
+          "--descope-button-highlight": "#361299",
+          "--descope-button-light": "#683AE6",
+          "--descope-button-main": "#A665EB"
+        }
+      }
+    },
+    "container": {
+      "--descope-container-background-color": "#181A1C"
+    },
+    "inputWrapper": {
+      "--descope-input-wrapper-background-color": "#181A1C",
+      "--descope-input-wrapper-border-radius": "5px",
+      "--descope-input-wrapper-font-family": "var(--descope-fonts-font1-family)",
+      "--descope-input-wrapper-label-text-color": "#bec4ca",
+      "--descope-input-wrapper-placeholder-text-color": "#bec4ca",
+      "--descope-input-wrapper-value-text-color": "#F5F6F7"
+    },
+    "link": {
+      "mode": {
+        "primary": {
+          "--descope-link-text-color": "#1F80FF"
+        }
+      }
+    },
+    "text": {
+      "mode": {
+        "error": {
+          "--descope-text-text-color": "#E33F3FFF"
+        },
+        "primary": {
+          "--descope-text-text-color": "#FFFFFF"
+        },
+        "secondary": {
+          "--descope-text-text-color": "#999999FF"
+        }
+      }
+    }
+  },
+  "globals": {
+    "fonts": {
+      "font1": {
+        "family": [
+          "Roboto",
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Helvetica Neue",
+          "Arial",
+          "Noto Sans",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji"
+        ],
+        "label": "Roboto",
+        "url": "https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900"
+      },
+      "font2": {
+        "family": [
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "Noto Sans",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji"
+        ],
+        "label": "Sans Serif"
+      }
+    },
+    "typography": {
+      "body1": {
+        "font": "var(--descope-fonts-font1-family)",
+        "size": "14px",
+        "weight": "500"
+      },
+      "body2": {
+        "font": "var(--descope-fonts-font1-family)",
+        "size": "12px",
+        "weight": "500"
+      },
+      "h1": {
+        "font": "var(--descope-fonts-font1-family)",
+        "size": "48px",
+        "weight": "500"
+      },
+      "h2": {
+        "font": "var(--descope-fonts-font1-family)",
+        "size": "40px",
+        "weight": "500"
+      },
+      "h3": {
+        "font": "var(--descope-fonts-font1-family)",
+        "size": "34px",
+        "weight": "500"
+      },
+      "subtitle1": {
+        "font": "var(--descope-fonts-font1-family)",
+        "size": "26px",
+        "weight": "500"
+      },
+      "subtitle2": {
+        "font": "var(--descope-fonts-font1-family)",
+        "size": "20px",
+        "weight": "500"
+      }
+    }
+  }
+}

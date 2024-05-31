@@ -1,0 +1,973 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "saml-config",
+  "htmlTemplate": {
+    "-3JI7Yq8vZ": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "4. Give name to the App.",
+        "full-width": false,
+        "id": "-3JI7Yq8vZ",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "-3Jh_3bp3b": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "-3Jh_3bp3b",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "1MyI_PvDtz": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "2. Click on \"+ Add new Application\".",
+        "full-width": false,
+        "id": "1MyI_PvDtz",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "1f1BybOQh1": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud1-new-app",
+        "id": "1f1BybOQh1",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud1.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "1sMmkeVxVT": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "id": "1sMmkeVxVT",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "2QSkgXf3Ya": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "2QSkgXf3Ya",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "2VLnbirnnI": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "c9eqH15jGo",
+      "props": {
+        "children": "Back",
+        "data-type": "button",
+        "formNoValidate": true,
+        "full-width": false,
+        "id": "2VLnbirnnI",
+        "mode": "primary",
+        "size": "md",
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "2zGuH5wXcR": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "{{sso.descopeEntityId}} ",
+        "full-width": false,
+        "id": "2zGuH5wXcR",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "3wxavWsSoO": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud4-entity-id",
+        "id": "3wxavWsSoO",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud4ab.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "3zODtOHdaI": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "3zODtOHdaI",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "8cvDxYc-SX": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud7-users-group",
+        "id": "8cvDxYc-SX",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud7.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "9d8mMXvCz_": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "10. Go to \"User Groups\" and check the groups you want to add to the app.",
+        "full-width": false,
+        "id": "9d8mMXvCz_",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "AsbgU__TNb": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "9. Give unique name to \"IDP URL\":",
+        "full-width": false,
+        "id": "AsbgU__TNb",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "BgZuzwtjEa": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud8-activate",
+        "id": "BgZuzwtjEa",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud8.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "D6g5WDwS2K": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud2-custom-saml-app",
+        "id": "D6g5WDwS2K",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud2.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "DUm0dr1MJv": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "DUm0dr1MJv",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "Dn9AjZwvZ8": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud5-idp-url",
+        "id": "Dn9AjZwvZ8",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud5.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "G86xZ1JjMy": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Metadata URL for IDP",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "data-errormessage-pattern-mismatch": "Must be a valid URL",
+        "full-width": true,
+        "id": "G86xZ1JjMy",
+        "label": "Metadata URL",
+        "max": 100,
+        "name": "idpMetadataURL",
+        "placeholder": "Metadata URL",
+        "required": true,
+        "size": "md",
+        "type": "url"
+      },
+      "type": {
+        "resolvedName": "IDPMetadataUrlInput"
+      }
+    },
+    "HIguLN-HJ4": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "6. Place the next value under \"ACS URLs\":",
+        "full-width": false,
+        "id": "HIguLN-HJ4",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "KtdNZYG_JT": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "12. Click the application created from the table again.",
+        "full-width": false,
+        "id": "KtdNZYG_JT",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "LmrSIGOWZb": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "1. Log in to JumpCloud Admin portal, Navigate to SSO.",
+        "full-width": false,
+        "id": "LmrSIGOWZb",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "MSphl_cm5i": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud3-app-name",
+        "id": "MSphl_cm5i",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud3.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "QE7xu1yo9q": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud5b-sign-assertion",
+        "id": "QE7xu1yo9q",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud5b.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "Wqj4xzZjjU",
+        "LmrSIGOWZb",
+        "1MyI_PvDtz",
+        "1f1BybOQh1",
+        "DUm0dr1MJv",
+        "q8Tl2dWVo9",
+        "D6g5WDwS2K",
+        "XkmX9IORDh",
+        "-3JI7Yq8vZ",
+        "MSphl_cm5i",
+        "l2jjvA9ZZV",
+        "U6Dblbl2cP",
+        "2zGuH5wXcR",
+        "3wxavWsSoO",
+        "abRm4HINI8",
+        "HIguLN-HJ4",
+        "jqPlaeMi67",
+        "VwAwi3OLn2",
+        "3zODtOHdaI",
+        "bKiGdpk-vp",
+        "QE7xu1yo9q",
+        "_qw594D11y",
+        "U3P_QidneI",
+        "Z7ckgn3ekk",
+        "2QSkgXf3Ya",
+        "AsbgU__TNb",
+        "Dn9AjZwvZ8",
+        "-3Jh_3bp3b",
+        "9d8mMXvCz_",
+        "8cvDxYc-SX",
+        "Sw-SqVBWSo",
+        "lWvRX5kdno",
+        "BgZuzwtjEa",
+        "fynj2vttDJ",
+        "KtdNZYG_JT",
+        "gT-QmM4RTY",
+        "T1__nAqpV2",
+        "weLvM0IBPv",
+        "cy-90qjBk_",
+        "G86xZ1JjMy",
+        "1sMmkeVxVT",
+        "c9eqH15jGo"
+      ],
+      "props": {
+        "align": "start",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "6",
+        "paddingY": "6",
+        "spaceBetween": "8",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "Sw-SqVBWSo": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "Sw-SqVBWSo",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "T1__nAqpV2": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "T1__nAqpV2",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "U3P_QidneI": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "8. Scroll down, Mark \"Declare Redirect Endpoint\".",
+        "full-width": false,
+        "id": "U3P_QidneI",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "U6Dblbl2cP": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "5. Change to \"SSO\" tab, Place the next value under \"SP Entity ID\" and \"IdP Entity ID\":",
+        "full-width": false,
+        "id": "U6Dblbl2cP",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "VwAwi3OLn2": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud4c-acs-url",
+        "id": "VwAwi3OLn2",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud4c.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "Wqj4xzZjjU": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "JumpCloud SAML configuration",
+        "full-width": false,
+        "id": "Wqj4xzZjjU",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "h2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "XkmX9IORDh": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "XkmX9IORDh",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "Z7ckgn3ekk": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud6-declare-redirect",
+        "id": "Z7ckgn3ekk",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud6.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "_qw594D11y": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "_qw594D11y",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "abRm4HINI8": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "abRm4HINI8",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "bKiGdpk-vp": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "7. Validate \"Sign Assertion\" is marked:",
+        "full-width": false,
+        "id": "bKiGdpk-vp",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "c9eqH15jGo": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "2VLnbirnnI",
+        "sUaYBATBG4"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "c9eqH15jGo",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "cy-90qjBk_": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud10-metadata-url",
+        "id": "cy-90qjBk_",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud10.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "fynj2vttDJ": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "fynj2vttDJ",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "gT-QmM4RTY": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "JumpCloud9-app-table",
+        "id": "gT-QmM4RTY",
+        "src": "https://imgs.descope.com/flows/saml-config/JumpCloud9.png"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "jqPlaeMi67": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "{{sso.acsUrl}}",
+        "full-width": false,
+        "id": "jqPlaeMi67",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "l2jjvA9ZZV": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "l2jjvA9ZZV",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "lWvRX5kdno": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "11. Click \"activate\".",
+        "full-width": false,
+        "id": "lWvRX5kdno",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "q8Tl2dWVo9": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "3. Select \"Custom SAML App\".",
+        "full-width": false,
+        "id": "q8Tl2dWVo9",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "sUaYBATBG4": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "c9eqH15jGo",
+      "props": {
+        "children": "Next",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "sUaYBATBG4",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "weLvM0IBPv": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "13. Go to \"SSO\" tab, Press the \"Copy Metadata URL\" and paste in next section:",
+        "full-width": false,
+        "id": "weLvM0IBPv",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    }
+  },
+  "id": "SC2fKgr4UIiqSNn3jXgoFHkLKlOvn",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "2VLnbirnnI",
+      "label": "Back",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "sUaYBATBG4",
+      "label": "Next",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

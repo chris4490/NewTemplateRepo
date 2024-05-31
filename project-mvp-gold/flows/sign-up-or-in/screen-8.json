@@ -1,0 +1,214 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "sign-up-or-in",
+  "htmlTemplate": {
+    "-elJaMwrLU": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "Mz6pW94dd2",
+      "props": {
+        "children": "Not now, maybe later",
+        "color": "primary",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "-elJaMwrLU",
+        "mode": "primary",
+        "size": "sm",
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "Mz6pW94dd2": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "NBlRNCDAZS",
+        "-elJaMwrLU"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "center",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "Mz6pW94dd2",
+        "justify": "start",
+        "paddingX": "4",
+        "paddingY": "4",
+        "spaceBetween": "1.5",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "NBlRNCDAZS": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Biometrics Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "Mz6pW94dd2",
+      "props": {
+        "auto-submit": true,
+        "children": "Add passkeys",
+        "color": "primary",
+        "data-type": "biometrics",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "NBlRNCDAZS",
+        "mode": "primary",
+        "size": "sm",
+        "startIcon": "passkey",
+        "startIconColorText": true,
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "BiometricsButton"
+      }
+    },
+    "OPk9Kp7s1X": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "hide-when-empty": true,
+        "id": "OPk9Kp7s1X",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "PXzqwp1Mi0": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Configure Passkeys?",
+        "full-width": false,
+        "id": "PXzqwp1Mi0",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "h3"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "PXzqwp1Mi0",
+        "_F5AIo-MRb",
+        "wCSlkhUS4J",
+        "Mz6pW94dd2",
+        "OPk9Kp7s1X"
+      ],
+      "props": {
+        "align": "center",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "8",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "_F5AIo-MRb": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "_F5AIo-MRb",
+        "src": "asset:img-bf5070634317dab3ee177753e2d5735905f522ee7916c3dcdf19ecd4865363d3.svg"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "wCSlkhUS4J": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Passkeys will make it easier for you to sign in!",
+        "full-width": false,
+        "id": "wCSlkhUS4J",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    }
+  },
+  "id": "SC2fKgr7kkBUosViPj6e0TzvzyhzB",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "-elJaMwrLU",
+      "label": "Not now, maybe later",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "passkey",
+      "id": "NBlRNCDAZS",
+      "label": "Add passkeys",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

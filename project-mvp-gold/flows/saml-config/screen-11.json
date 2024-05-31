@@ -1,0 +1,87 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "saml-config",
+  "htmlTemplate": {
+    "I39vUdLCH5": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "SSO configured successfully ",
+        "full-width": false,
+        "id": "I39vUdLCH5",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "h2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "I39vUdLCH5",
+        "d5mcRIUwPL"
+      ],
+      "props": {
+        "align": "start",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "8",
+        "paddingY": "8",
+        "spaceBetween": "8",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "d5mcRIUwPL": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Done",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "d5mcRIUwPL",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    }
+  },
+  "id": "SC2fKgr83rDvmQJI2OV0JUM9SuN5P",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "d5mcRIUwPL",
+      "label": "Done",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

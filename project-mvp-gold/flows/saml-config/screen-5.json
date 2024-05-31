@@ -1,0 +1,1254 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "saml-config",
+  "htmlTemplate": {
+    "-9SWYyFigo": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Copy the \"Login URL\" and \"Azure AD Identifier\" to the following fields:",
+        "full-width": false,
+        "id": "-9SWYyFigo",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "-RVuUiIUSA": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Azure AD configuration",
+        "full-width": false,
+        "id": "-RVuUiIUSA",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "h2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "-t0bIfa_0X": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "-t0bIfa_0X",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/aa78c26d-f258-4429-fd05-c0e9d7b75700/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "1DEJSWcm48": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "mdoHr5mNT5",
+      "props": {
+        "children": "Next",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "1DEJSWcm48",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "1sMmkeVxVT": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "id": "1sMmkeVxVT",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "2-bwmkVnTh": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "2-bwmkVnTh",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "3leHXiJBwI": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "{{sso.acsUrl}}",
+        "full-width": false,
+        "id": "3leHXiJBwI",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "4CsryQRKlV": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Finish by clicking on \"Select\" on the bottom.",
+        "full-width": false,
+        "id": "4CsryQRKlV",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "650unTV_Fj": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "650unTV_Fj",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/47d2c9bc-0b8c-435a-38c2-76e3f36bb500/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "9B4XmOzDrF": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "14. Copy the contents of that file to the following field:",
+        "full-width": false,
+        "id": "9B4XmOzDrF",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "9ZPYaXwjcj": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "9ZPYaXwjcj",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "BL9B0Uv1BA": {
+      "custom": {},
+      "displayName": "Certificate Textarea",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "full-width": true,
+        "id": "BL9B0Uv1BA",
+        "label": "Certificate",
+        "name": "idpCert",
+        "placeholder": "Certificate (Base64)",
+        "required": true
+      },
+      "type": {
+        "resolvedName": "CertificateTextarea"
+      }
+    },
+    "BTIQH_G_gs": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "13. Download the \"Certificate (Base64)\".",
+        "full-width": false,
+        "id": "BTIQH_G_gs",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "CLWxwFXubZ": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Login URL Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "data-errormessage-pattern-mismatch": "Must be a valid URL",
+        "full-width": true,
+        "id": "CLWxwFXubZ",
+        "label": "Login URL",
+        "max": 100,
+        "name": "idpURL",
+        "placeholder": "Login URL",
+        "required": true,
+        "size": "md",
+        "type": "url"
+      },
+      "type": {
+        "resolvedName": "LoginUrlInput"
+      }
+    },
+    "DPcOWVHYxf": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "DPcOWVHYxf",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "EDEnBenj8A": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "7. Enter the following value for \"Identifier (Entity ID)\":",
+        "full-width": false,
+        "id": "EDEnBenj8A",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "GHKSESlCsD": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "GHKSESlCsD",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "GTqasjh56t": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Click \"Save\" when you are done.",
+        "full-width": false,
+        "id": "GTqasjh56t",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "Gup3_S1PEj": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "Gup3_S1PEj",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/d91ad797-452a-4810-74bb-fae31cfedf00/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "HGSaLOeVln": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "HGSaLOeVln",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "K4bwRv7eDh": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "11. Click on \"Assign\" on the bottom.",
+        "full-width": false,
+        "id": "K4bwRv7eDh",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "K_AXwJF4ee": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "2. Click on \"New application\".",
+        "full-width": false,
+        "id": "K_AXwJF4ee",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "L5h7FCe_9s": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "L5h7FCe_9s",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "L9s2lEohOW": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "L9s2lEohOW",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "LmrSIGOWZb": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "3. Click on \"Create your own application\".",
+        "full-width": false,
+        "id": "LmrSIGOWZb",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "MZn7ZgKQpl": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "15. Scroll down to section 4: \"Set up {App Name}\".",
+        "full-width": false,
+        "id": "MZn7ZgKQpl",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "Mq6tTjyKlQ": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "Mq6tTjyKlQ",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/d8a50a5c-287c-4550-e628-2cc578738100/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "N7zBrBe3Gi": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "N7zBrBe3Gi",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "Nv5hthFxFw": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "6. Click on \"Edit\".",
+        "full-width": false,
+        "id": "Nv5hthFxFw",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "PgPykGppW7": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "PgPykGppW7",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/696556f8-8808-414d-9ff6-ecc49f2ebc00/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "-RVuUiIUSA",
+        "Sfbb2YvKJJ",
+        "-t0bIfa_0X",
+        "L5h7FCe_9s",
+        "K_AXwJF4ee",
+        "vcpzGfdCwN",
+        "GHKSESlCsD",
+        "LmrSIGOWZb",
+        "iLXZqnHEp4",
+        "XD79ookOEj",
+        "ZNPch4siKu",
+        "Gup3_S1PEj",
+        "hVYqJeeYC-",
+        "ytMsXz41X5",
+        "xFipgibxqp",
+        "N7zBrBe3Gi",
+        "Nv5hthFxFw",
+        "ih32C4w80J",
+        "L9s2lEohOW",
+        "EDEnBenj8A",
+        "l-oeNHk4M0",
+        "PgPykGppW7",
+        "2-bwmkVnTh",
+        "UCAe7yqqTS",
+        "3leHXiJBwI",
+        "GTqasjh56t",
+        "650unTV_Fj",
+        "9ZPYaXwjcj",
+        "rqIwwiQMa-",
+        "hnbbEl6CoC",
+        "YJOmdFsK69",
+        "bnWX_tNXWB",
+        "xQ9BUHLEtP",
+        "4CsryQRKlV",
+        "Mq6tTjyKlQ",
+        "XYm4wM8vu5",
+        "K4bwRv7eDh",
+        "mCmlllg4vw",
+        "DPcOWVHYxf",
+        "s2agF-z9Do",
+        "iDqwYRJqV7",
+        "ygShURnM7G",
+        "HGSaLOeVln",
+        "BTIQH_G_gs",
+        "TDdam0AanQ",
+        "9B4XmOzDrF",
+        "BL9B0Uv1BA",
+        "icdHv4ZbN1",
+        "MZn7ZgKQpl",
+        "i98S_nhCVA",
+        "-9SWYyFigo",
+        "CLWxwFXubZ",
+        "ZPwAPGIsFl",
+        "1sMmkeVxVT",
+        "mdoHr5mNT5"
+      ],
+      "props": {
+        "align": "start",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "8",
+        "paddingY": "8",
+        "spaceBetween": "8",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "Sfbb2YvKJJ": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "1. Log in to Azure Active Directory Portal, and select \"Enterprise applications\" in the navigation panel.",
+        "full-width": false,
+        "id": "Sfbb2YvKJJ",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "TDdam0AanQ": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "TDdam0AanQ",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/0de70087-d217-4ab1-b06e-94dfc0788d00/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "UCAe7yqqTS": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "8. Enter the following value for \"Reply URL (Assertion Consumer Service URL)\".",
+        "full-width": false,
+        "id": "UCAe7yqqTS",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "XD79ookOEj": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "XD79ookOEj",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "XYm4wM8vu5": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "XYm4wM8vu5",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "YJOmdFsK69": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "YJOmdFsK69",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "ZNPch4siKu": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "4. In the panel on the right, enter an app name and select the \"Integrate any other application you don't find in the gallery (Non-gallery)\" option, and click \"Create\".",
+        "full-width": false,
+        "id": "ZNPch4siKu",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "ZPwAPGIsFl": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Entity ID Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "full-width": true,
+        "id": "ZPwAPGIsFl",
+        "label": "Azure AD Identifier",
+        "max": 100,
+        "name": "entityId",
+        "placeholder": "Azure AD Identifier",
+        "required": true,
+        "size": "md",
+        "type": "text"
+      },
+      "type": {
+        "resolvedName": "EntityIdInput"
+      }
+    },
+    "_6axNmxfxS": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "mdoHr5mNT5",
+      "props": {
+        "children": "Back",
+        "data-type": "button",
+        "formNoValidate": true,
+        "full-width": false,
+        "id": "_6axNmxfxS",
+        "mode": "primary",
+        "size": "md",
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "bnWX_tNXWB": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "10. In the Users section on the left, click on \"None Selected\".",
+        "full-width": false,
+        "id": "bnWX_tNXWB",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "hVYqJeeYC-": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "hVYqJeeYC-",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "hnbbEl6CoC": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "hnbbEl6CoC",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/8edbdd88-503a-4ba8-14d4-87b47464a000/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "i98S_nhCVA": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "i98S_nhCVA",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/3c718cb6-0215-469f-a765-cf5e197da100/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "iDqwYRJqV7": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Scroll down to section 3: \"SAML Certificates\".",
+        "full-width": false,
+        "id": "iDqwYRJqV7",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "iLXZqnHEp4": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "iLXZqnHEp4",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/edd07de5-d345-4c2e-6f8e-b52de4882500/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "icdHv4ZbN1": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "icdHv4ZbN1",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "ih32C4w80J": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "ih32C4w80J",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/a57190f8-9b0b-4499-8e24-fe8ecc00fc00/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "l-oeNHk4M0": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "{{sso.descopeEntityId}}",
+        "full-width": false,
+        "id": "l-oeNHk4M0",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "mCmlllg4vw": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "mCmlllg4vw",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/d546d730-8fe0-4326-9f05-bed4ef9d6300/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "mdoHr5mNT5": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "_6axNmxfxS",
+        "1DEJSWcm48"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "mdoHr5mNT5",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "rqIwwiQMa-": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "9. To add users and groups to the app, click on \"Users and groups\", and then on \"Add user/group\".",
+        "full-width": false,
+        "id": "rqIwwiQMa-",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "s2agF-z9Do": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "12. Select \"Single sign-on\" from the left side pane.",
+        "full-width": false,
+        "id": "s2agF-z9Do",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "vcpzGfdCwN": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "vcpzGfdCwN",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/d17997c0-19bd-4f85-923d-f21e925d3500/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "xFipgibxqp": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "xFipgibxqp",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/aba4d098-e9b0-4c8c-dc3a-4d9e12670100/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "xQ9BUHLEtP": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "On the right side pane, select the users or groups you want to give access to your app.",
+        "full-width": false,
+        "id": "xQ9BUHLEtP",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "ygShURnM7G": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "ygShURnM7G",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/8d2988bc-4968-47af-3772-75d943c39800/azure"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "ytMsXz41X5": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "5. Click on \"Single sign-on\" on the left pane, and select \"SAML\".",
+        "full-width": false,
+        "id": "ytMsXz41X5",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    }
+  },
+  "id": "SC2fKgr5ZrgTP1zDWrPDFH8wvLhdJ",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "1DEJSWcm48",
+      "label": "Next",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "_6axNmxfxS",
+      "label": "Back",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

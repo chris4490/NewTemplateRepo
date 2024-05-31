@@ -1,0 +1,434 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "sign-up-or-in",
+  "htmlTemplate": {
+    "058XUDlhFP": {
+      "custom": {
+        "subType": "social",
+        "type": "button"
+      },
+      "displayName": "Google Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "zSbBTJOpe0",
+      "props": {
+        "children": "Continue with Google",
+        "color": "primary",
+        "data-descope-provider": "google",
+        "data-type": "social",
+        "formNoValidate": true,
+        "full-width": true,
+        "id": "058XUDlhFP",
+        "mode": "primary",
+        "size": "md",
+        "startIcon": "google",
+        "startIconColorText": false,
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "GoogleButton"
+      }
+    },
+    "3Zx8eDaxW1": {
+      "custom": {},
+      "displayName": "Logo",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Logo",
+        "height": "100px",
+        "id": "3Zx8eDaxW1"
+      },
+      "type": {
+        "resolvedName": "Logo"
+      }
+    },
+    "COcMh1vzSn": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "auto-submit": true,
+        "children": "Continue",
+        "color": "primary",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "COcMh1vzSn",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "F6duB0LsbH": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "PsVOJz6EKK",
+      "props": {
+        "children": "By continuing, I agree to the Company's",
+        "full-width": false,
+        "id": "F6duB0LsbH",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "O6g57IzhQ9": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "hide-when-empty": true,
+        "id": "O6g57IzhQ9",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "PsVOJz6EKK": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "F6duB0LsbH",
+        "p38wRKDanu",
+        "fpO7WnUtoV",
+        "iFbr4t5xkI"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "PsVOJz6EKK",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "1",
+        "spaceBetween": "0.5",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "3Zx8eDaxW1",
+        "cDmtaSAoSF",
+        "YsKt52415F",
+        "PsVOJz6EKK",
+        "COcMh1vzSn",
+        "qVrDtsk_QL",
+        "zSbBTJOpe0",
+        "O6g57IzhQ9"
+      ],
+      "props": {
+        "align": "center",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "8",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "W8kS07v_i9": {
+      "custom": {
+        "subType": "social",
+        "type": "button"
+      },
+      "displayName": "Microsoft Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "zSbBTJOpe0",
+      "props": {
+        "children": "Continue with Microsoft",
+        "color": "primary",
+        "data-descope-provider": "microsoft",
+        "data-type": "social",
+        "formNoValidate": true,
+        "full-width": true,
+        "id": "W8kS07v_i9",
+        "mode": "primary",
+        "size": "md",
+        "startIcon": "microsoft",
+        "startIconColorText": false,
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "MicrosoftButton"
+      }
+    },
+    "YsKt52415F": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Email Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "data-errormessage-pattern-mismatch": "Must be a valid email",
+        "full-width": true,
+        "id": "YsKt52415F",
+        "label": "",
+        "max": 100,
+        "name": "email",
+        "pattern": "^[\\w._%+-]+@[\\w.-]+\\.[A-Za-z]{2,}$",
+        "placeholder": "Email address *",
+        "required": true,
+        "size": "md",
+        "type": "email"
+      },
+      "type": {
+        "resolvedName": "EmailInput"
+      }
+    },
+    "cDmtaSAoSF": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Welcome!",
+        "full-width": false,
+        "id": "cDmtaSAoSF",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "h3"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "fpO7WnUtoV": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "PsVOJz6EKK",
+      "props": {
+        "children": "and",
+        "full-width": false,
+        "id": "fpO7WnUtoV",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "gDYTgzMsxf": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Passkey Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "zSbBTJOpe0",
+      "props": {
+        "children": "Continue with Passkeys",
+        "color": "primary",
+        "data-type": "biometrics",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "gDYTgzMsxf",
+        "mode": "primary",
+        "size": "md",
+        "startIcon": "passkey",
+        "startIconColorText": true,
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "PasskeyButton"
+      }
+    },
+    "iFbr4t5xkI": {
+      "custom": {},
+      "displayName": "Link",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "PsVOJz6EKK",
+      "props": {
+        "children": "Terms of Service",
+        "full-width": false,
+        "href": "",
+        "id": "iFbr4t5xkI",
+        "italic": false,
+        "mode": "primary",
+        "target": "_blank",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Link"
+      }
+    },
+    "p38wRKDanu": {
+      "custom": {},
+      "displayName": "Link",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "PsVOJz6EKK",
+      "props": {
+        "children": "Privacy Statement",
+        "full-width": false,
+        "href": "",
+        "id": "p38wRKDanu",
+        "italic": false,
+        "mode": "primary",
+        "target": "_blank",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Link"
+      }
+    },
+    "qVrDtsk_QL": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "OR",
+        "id": "qVrDtsk_QL",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "zSbBTJOpe0": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "058XUDlhFP",
+        "W8kS07v_i9",
+        "gDYTgzMsxf"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "center",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "zSbBTJOpe0",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "4",
+        "spaceBetween": "1.5",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    }
+  },
+  "id": "SC2fKgr2tgiW3S3EQS48IEScPehf0",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "google",
+      "id": "058XUDlhFP",
+      "label": "Continue with Google",
+      "subType": "social",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "COcMh1vzSn",
+      "label": "Continue",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "microsoft",
+      "id": "W8kS07v_i9",
+      "label": "Continue with Microsoft",
+      "subType": "social",
+      "type": ""
+    },
+    {
+      "icon": "passkey",
+      "id": "gDYTgzMsxf",
+      "label": "Continue with Passkeys",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

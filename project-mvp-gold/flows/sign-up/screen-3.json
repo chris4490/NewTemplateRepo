@@ -1,0 +1,182 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "sign-up",
+  "htmlTemplate": {
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "gqP7FqBbmN",
+        "vtdrgpvbjc",
+        "zCK1RafMud",
+        "gKcvhuo5FY"
+      ],
+      "props": {
+        "align": "center",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "8",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "gKcvhuo5FY": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Submit",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "gKcvhuo5FY",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "gqP7FqBbmN": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "To complete your sign up, please provide the following information",
+        "full-width": false,
+        "id": "gqP7FqBbmN",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "kPcVNa55jO": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "zCK1RafMud",
+      "props": {
+        "alt": "Image",
+        "id": "kPcVNa55jO",
+        "src": "asset:img-0a427e4128082ea77b269733eaefb5caeb5f75c073dadcd217540009d030d5a5.png",
+        "width": "30px"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "lSXCw8dy3-": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "zCK1RafMud",
+      "props": {
+        "children": "Phone number: {{inputs.phone}}",
+        "full-width": false,
+        "id": "lSXCw8dy3-",
+        "italic": false,
+        "mode": "secondary",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "vtdrgpvbjc": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Full Name Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "full-width": true,
+        "id": "vtdrgpvbjc",
+        "label": "",
+        "max": 100,
+        "name": "fullName",
+        "placeholder": "Full Name",
+        "required": false,
+        "size": "md",
+        "type": "text"
+      },
+      "type": {
+        "resolvedName": "FullNameInput"
+      }
+    },
+    "zCK1RafMud": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "lSXCw8dy3-",
+        "kPcVNa55jO"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "center",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "zCK1RafMud",
+        "justify": "between",
+        "paddingX": "5",
+        "paddingY": "2",
+        "spaceBetween": "0",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    }
+  },
+  "id": "SC2fKgqw4XtVC4M4rHvA6uFuMOZ2s",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "gKcvhuo5FY",
+      "label": "Submit",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

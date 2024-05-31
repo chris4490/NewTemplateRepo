@@ -1,0 +1,161 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "saml-config",
+  "htmlTemplate": {
+    "1sMmkeVxVT": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "id": "1sMmkeVxVT",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "Bt8gWFxUWL": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Fill in your company SAML Domain",
+        "full-width": false,
+        "id": "Bt8gWFxUWL",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "h2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "HxGpxuV9S-": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "KksBJvpyf5"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "HxGpxuV9S-",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "KksBJvpyf5": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "HxGpxuV9S-",
+      "props": {
+        "children": "Next",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "KksBJvpyf5",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "Bt8gWFxUWL",
+        "v8r2fblTTO",
+        "HxGpxuV9S-",
+        "1sMmkeVxVT"
+      ],
+      "props": {
+        "align": "start",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "6",
+        "paddingY": "6",
+        "spaceBetween": "10",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "v8r2fblTTO": {
+      "custom": {},
+      "displayName": "Tenant Domain",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "data-errormessage-pattern-mismatch": "Must be a valid domain",
+        "full-width": true,
+        "id": "v8r2fblTTO",
+        "label": "Company Domain",
+        "max": 100,
+        "name": "tenantDomain",
+        "pattern": "localhost|^(?:[a-zA-Z0-9]{1,}\\.)?[a-zA-Z0-9][a-zA-Z0-9-_]{0,61}[a-zA-Z0-9](?:\\.[a-zA-Z]{1,})+$",
+        "placeholder": "example.com",
+        "required": false,
+        "size": "md"
+      },
+      "type": {
+        "resolvedName": "TenantDomainInput"
+      }
+    }
+  },
+  "id": "SC2fKgr6TDxPeEeaGB1Fscff93IWt",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "KksBJvpyf5",
+      "label": "Next",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}
