@@ -81,7 +81,7 @@ jobs:
           PR_NUMBER: ${{ steps.fetch_pr.outputs.pr_number }}
         run: |
           cat ${{ github.workspace }}/temp_event_with_secrets.json
-          OUTPUT=$(descopecli project snapshot validate "${{ vars.MVP_GOLD_ID }}" -p "${{ env.FILES_PATH }}" --secrets-input ${{ github.workspace }}/temp_event_with_secrets.json)
+          OUTPUT=$(descopecli project snapshot validate "${{ vars.MVP_STAGING_ID }}" -p "${{ env.FILES_PATH }}" --secrets-input ${{ github.workspace }}/temp_event_with_secrets.json)
           echo "Descope CLI Output: $OUTPUT"
 
   import:
@@ -114,7 +114,7 @@ jobs:
           PR_NUMBER: ${{ steps.fetch_pr.outputs.pr_number }}
         run: |
           cat ${{ github.workspace }}/temp_event_with_secrets.json
-          OUTPUT=$(descopecli project snapshot import "${{ vars.MVP_GOLD_ID }}" -p "${{ env.FILES_PATH }}" --secrets-input ${{ github.workspace }}/temp_event_with_secrets.json)
+          OUTPUT=$(descopecli project snapshot import "${{ vars.MVP_STAGING_ID }}" -p "${{ env.FILES_PATH }}" --secrets-input ${{ github.workspace }}/temp_event_with_secrets.json)
           echo "Descope CLI Output: $OUTPUT"
       - name: Delete Temporary Event File
         if: always()
