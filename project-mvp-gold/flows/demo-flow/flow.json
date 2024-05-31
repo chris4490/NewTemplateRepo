@@ -1,0 +1,56 @@
+{
+  "description": "",
+  "disabled": false,
+  "dsl": {
+    "apiVersion": 0,
+    "startTask": "1",
+    "tasks": {
+      "0": {
+        "ID": "0",
+        "action": "logged-in",
+        "name": "End",
+        "next": {},
+        "type": "automated",
+        "view": {
+          "x": 396,
+          "y": 0
+        }
+      },
+      "1": {
+        "ID": "1",
+        "name": "New Screen",
+        "next": {},
+        "screenId": "SC2hEx2VC5IjHsrYs1wehpyjLDQNd",
+        "type": "screen",
+        "view": {
+          "x": 336,
+          "y": -264
+        }
+      },
+      "start": {
+        "ID": "start",
+        "name": "start",
+        "next": {
+          "rules": [
+            {
+              "taskId": "1"
+            }
+          ]
+        },
+        "view": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  },
+  "etag": "manual",
+  "fingerprint": false,
+  "id": "demo-flow",
+  "name": "demo-flow",
+  "translate": false,
+  "translateConnectorID": "",
+  "translateSourceLang": "",
+  "translateTargetLangs": [],
+  "widget": false
+}

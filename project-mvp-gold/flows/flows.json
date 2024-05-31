@@ -2,6 +2,7 @@
   "flows": [
     "add-passkeys",
     "combined-flow-v2",
+    "demo-flow",
     "live-flow",
     "my-new-flow",
     "my-new-flow1",
