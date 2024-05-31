@@ -1,0 +1,31 @@
+name: Delete Clone
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Cloned Project ID via API
+        id: get-cloned-project-id
+        run: |         
+          PR_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+          COMMENTS=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                        "https://api.github.com/repos/${{ github.repository }}/issues/${PR_NUMBER}/comments")
+          CLONED_PROJECT_ID=$(echo "$COMMENTS" | jq -r '.[] | select(.body | contains("CLONED_PROJECT_ID_'$PR_NUMBER'")) | .body' | cut -d '=' -f2)
+          echo "CLONED_PROJECT_ID=$CLONED_PROJECT_ID" >> $GITHUB_ENV
+          echo "::set-output name=cloned_project_id::$CLONED_PROJECT_ID"
+      - name: Install Descope CLI
+        uses: descope/descopecli/.github/actions/install@v0.8.2
+      - name: Delete Project
+        id: delete-project
+        shell: bash
+        env:
+          CLONED_PROJECT_ID: ${{ env.CLONED_PROJECT_ID }}
+          DESCOPE_MANAGEMENT_KEY: ${{ secrets.management_key }}
+        run: |
+          echo "Deleting project with ID $CLONED_PROJECT_ID"
+          OUTPUT=$(echo y | descopecli project delete "$CLONED_PROJECT_ID")
+          echo "Descope CLI Output: $OUTPUT"

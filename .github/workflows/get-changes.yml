@@ -1,0 +1,66 @@
+name: Get Changes
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+env:
+  FILES_PATH: 'project-mvp-gold'
+
+jobs:
+  get-changes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Fetch more commit history
+
+      - name: Determine Diff Range
+        id: diff-range
+        run: |
+          if [[ ${{ github.event.action }} == "opened" ]]; then
+            echo "DIFF_BASE=${{ github.event.pull_request.base.sha }}" >> $GITHUB_ENV
+          else
+            echo "DIFF_BASE=$(git rev-parse HEAD^1)" >> $GITHUB_ENV
+          fi
+
+      - name: Get Changed Files
+        id: get-changes
+        run: |
+          CHANGED_FILES=$(git diff --name-only ${{ env.DIFF_BASE }} ${{ github.sha }})
+          echo "${CHANGED_FILES}" > changed_files.txt
+
+      - name: Upload Changed Files
+        uses: actions/upload-artifact@v3
+        with:
+          name: changed-files
+          path: changed_files.txt
+
+  comment-changes:
+    runs-on: ubuntu-latest
+    needs: get-changes
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download Changed Files
+        uses: actions/download-artifact@v3
+        with:
+          name: changed-files
+          path: .
+
+      - name: Comment Changes
+        run: |
+          COMMENT_BODY="### Changed Files\n\n"
+          while IFS= read -r file; do
+            RELATIVE_PATH=${file#${{ env.FILES_PATH }}/}
+            COMMENT_BODY="${COMMENT_BODY}- \`${RELATIVE_PATH}\`\n"
+          done < changed_files.txt
+
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                -X POST \
+                -d "{\"body\":\"${COMMENT_BODY}\"}" \
+                "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments"

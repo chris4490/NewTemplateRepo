@@ -1,0 +1,46 @@
+name: Clone Project
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  clone-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Fetch Pull Request Number
+        id: fetch_pr
+        run: |
+          PR_NUMBER=$(echo "${GITHUB_REF}" | awk -F'/' '{print $3}')
+          echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
+          echo "::set-output name=pr_number::$PR_NUMBER"
+
+      - name: Install Descope CLI
+        uses: descope/descopecli/.github/actions/install@v0.8.2
+      
+      - name: Clone Project
+        id: clone
+        shell: bash
+        env:
+          project_id: ${{ vars.MVP_GOLD_ID }}
+          DESCOPE_MANAGEMENT_KEY: ${{ secrets.management_key }}
+          PR_NUMBER: ${{ steps.fetch_pr.outputs.pr_number }}
+        run: |
+          echo "Cloning project with PR number $PR_NUMBER"
+          OUTPUT=$(descopecli project clone "${{ vars.MVP_GOLD_ID }}" "test-clone-${PR_NUMBER}")
+          echo "Descope CLI Output: $OUTPUT"
+          JSON_OUTPUT=$(echo "$OUTPUT" | sed -n 's/.*\({.*}\).*/\1/p')
+          PROJECT_ID=$(echo $JSON_OUTPUT | jq -r '.projectId')
+          if [ -z "$PROJECT_ID" ]; then
+            echo "Failed to parse project ID from Descope CLI output."
+            exit 1
+          fi
+          echo "PROJECT_ID=$PROJECT_ID" >> $GITHUB_ENV
+          echo "PROJECT_ID=$PROJECT_ID" > variable.txt
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -X POST \
+               -d "{\"body\":\"CLONED_PROJECT_ID_${PR_NUMBER}=$PROJECT_ID\"}" \
+               "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments"
