@@ -76,8 +76,10 @@
             "value": "http"
           }
         },
-        "errorHandling": {
-          "request_error": "automatic"
+        "errorHandlingV2": {
+          "request_error": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "100",
         "name": "Get Session Token",
@@ -178,8 +180,10 @@
             "value": "http"
           }
         },
-        "errorHandling": {
-          "request_error": "automatic"
+        "errorHandlingV2": {
+          "request_error": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "102",
         "name": "Create GFM User",
@@ -331,13 +335,15 @@
               {
                 "key": "customAttributes.gfmPersonId",
                 "type": "context",
-                "value": "connectors.createUserResult.person.person_id"
+                "value": "connectors.createUserResult.body.person.person_id"
               }
             ]
           }
         },
-        "errorHandling": {
-          "UpdateUserPropertiesFailed": "automatic"
+        "errorHandlingV2": {
+          "UpdateUserPropertiesFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "107",
         "name": "Update User / Properties from GFM data",
@@ -532,8 +538,10 @@
       },
       "14": {
         "action": "password-sign-up",
-        "errorHandling": {
-          "PasswordSignUpFailed": "automatic"
+        "errorHandlingV2": {
+          "PasswordSignUpFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "14",
         "name": "Descope Sign Up / Password",
@@ -738,9 +746,13 @@
             "value": ""
           }
         },
-        "errorHandling": {
-          "OTPUnauthorizedRequest": "automatic",
-          "OTPUpdateUserPhoneFailed": "automatic"
+        "errorHandlingV2": {
+          "OTPUnauthorizedRequest": {
+            "errorHandlingType": "automatic"
+          },
+          "OTPUpdateUserPhoneFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "20",
         "name": "Update User / OTP / SMS",
@@ -785,9 +797,13 @@
       },
       "22": {
         "action": "verify-code-otp-sms",
-        "errorHandling": {
-          "OTPVerifyCodeExpired": "automatic",
-          "OTPVerifyCodePhoneFailed": "automatic"
+        "errorHandlingV2": {
+          "OTPVerifyCodeExpired": {
+            "errorHandlingType": "automatic"
+          },
+          "OTPVerifyCodePhoneFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "22",
         "name": "Verify Code / OTP / SMS",
@@ -858,9 +874,13 @@
             "value": "25.end"
           }
         },
-        "errorHandling": {
-          "MagicLinkVerifyFailed": "automatic",
-          "PasswordSendResetFailed": "automatic"
+        "errorHandlingV2": {
+          "MagicLinkVerifyFailed": {
+            "errorHandlingType": "automatic"
+          },
+          "PasswordSendResetFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "25",
         "name": "Send Password Reset (TBD - custom template)",
@@ -881,9 +901,13 @@
       "25.end": {
         "action": "verify-magic-link",
         "arguments": {},
-        "errorHandling": {
-          "MagicLinkVerifyFailed": "automatic",
-          "PasswordSendResetFailed": "automatic"
+        "errorHandlingV2": {
+          "MagicLinkVerifyFailed": {
+            "errorHandlingType": "automatic"
+          },
+          "PasswordSendResetFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "25.end",
         "name": "Send Password Reset (TBD - custom template)",
@@ -1066,8 +1090,10 @@
       },
       "32": {
         "action": "password-sign-up",
-        "errorHandling": {
-          "PasswordSignUpFailed": "automatic"
+        "errorHandlingV2": {
+          "PasswordSignUpFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "32",
         "name": "Descope Sign Up / Password",
@@ -1133,9 +1159,13 @@
       },
       "36": {
         "action": "password-sign-in",
-        "errorHandling": {
-          "PasswordExpired": "automatic",
-          "PasswordSignInFailed": "automatic"
+        "errorHandlingV2": {
+          "PasswordExpired": {
+            "errorHandlingType": "automatic"
+          },
+          "PasswordSignInFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "36",
         "name": "Descope Sign In / Password",
@@ -1240,8 +1270,10 @@
             ]
           }
         },
-        "errorHandling": {
-          "UpdateUserPropertiesFailed": "automatic"
+        "errorHandlingV2": {
+          "UpdateUserPropertiesFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "42",
         "name": "Update User / Properties from GFM data",
@@ -1305,7 +1337,7 @@
               {
                 "key": "gfm_token",
                 "type": "context",
-                "value": "connectors.sessionResult.session_token"
+                "value": "connectors.sessionResult.headers.session_token"
               }
             ]
           }
@@ -1328,9 +1360,13 @@
       },
       "5": {
         "action": "password-sign-in",
-        "errorHandling": {
-          "PasswordExpired": "automatic",
-          "PasswordSignInFailed": "automatic"
+        "errorHandlingV2": {
+          "PasswordExpired": {
+            "errorHandlingType": "automatic"
+          },
+          "PasswordSignInFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "5",
         "name": "Descope Sign In / Password",
@@ -1391,8 +1427,10 @@
             "value": ""
           }
         },
-        "errorHandling": {
-          "OTPSignUpOrInEmailFailed": "automatic"
+        "errorHandlingV2": {
+          "OTPSignUpOrInEmailFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "54",
         "name": "Sign Up or In / OTP / Email (TBD on method - Replace with API connector, OTP, magic link, etc)",
@@ -1412,9 +1450,13 @@
       },
       "56": {
         "action": "verify-code-otp-email",
-        "errorHandling": {
-          "OTPVerifyCodeEmailFailed": "automatic",
-          "OTPVerifyCodeExpired": "automatic"
+        "errorHandlingV2": {
+          "OTPVerifyCodeEmailFailed": {
+            "errorHandlingType": "automatic"
+          },
+          "OTPVerifyCodeExpired": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "56",
         "name": "Verify Code / OTP / Email",
@@ -1434,8 +1476,10 @@
       },
       "57": {
         "action": "password-update",
-        "errorHandling": {
-          "PasswordUpdateFailed": "automatic"
+        "errorHandlingV2": {
+          "PasswordUpdateFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "57",
         "name": "Update Password",
@@ -2010,8 +2054,10 @@
             "value": ""
           }
         },
-        "errorHandling": {
-          "OTPSignUpOrInPhoneFailed": "automatic"
+        "errorHandlingV2": {
+          "OTPSignUpOrInPhoneFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "77",
         "name": "Sign Up or In / OTP / Voice call",
@@ -2090,8 +2136,10 @@
             "value": ""
           }
         },
-        "errorHandling": {
-          "OTPSignUpOrInPhoneFailed": "automatic"
+        "errorHandlingV2": {
+          "OTPSignUpOrInPhoneFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "8",
         "name": "Sign Up or In / OTP / SMS",
@@ -2137,9 +2185,13 @@
             "value": ""
           }
         },
-        "errorHandling": {
-          "OTPUnauthorizedRequest": "automatic",
-          "OTPUpdateUserPhoneFailed": "automatic"
+        "errorHandlingV2": {
+          "OTPUnauthorizedRequest": {
+            "errorHandlingType": "automatic"
+          },
+          "OTPUpdateUserPhoneFailed": {
+            "errorHandlingType": "automatic"
+          }
         },
         "id": "80",
         "name": "Update User / OTP / Voice call",
@@ -2633,8 +2685,10 @@
             "value": "http"
           }
         },
-        "errorHandling": {
-          "request_error": "custom"
+        "errorHandlingV2": {
+          "request_error": {
+            "errorHandlingType": "custom"
+          }
         },
         "id": "95",
         "name": "Migrate User",
@@ -2785,8 +2839,10 @@
             "value": "http"
           }
         },
-        "errorHandling": {
-          "request_error": "custom"
+        "errorHandlingV2": {
+          "request_error": {
+            "errorHandlingType": "custom"
+          }
         },
         "id": "97",
         "name": "Migrate User",
@@ -2937,8 +2993,10 @@
             "value": "http"
           }
         },
-        "errorHandling": {
-          "request_error": "custom"
+        "errorHandlingV2": {
+          "request_error": {
+            "errorHandlingType": "custom"
+          }
         },
         "id": "99",
         "name": "Update (PATCH) GFM User",
