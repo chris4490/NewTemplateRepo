@@ -1,0 +1,253 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "sign-up-or-in",
+  "htmlTemplate": {
+    "3macLQfIKv": {
+      "custom": {},
+      "displayName": "Phone Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "jNFBRQNhqu",
+      "props": {
+        "bordered": true,
+        "country-input-placeholder": "Code",
+        "data-errormessage-missing-value": "Required",
+        "data-errormessage-pattern-mismatch": "Must be a valid phone number",
+        "data-errormessage-pattern-mismatch-too-short": "Please enter a valid phone",
+        "default-code": "autoDetect",
+        "full-width": true,
+        "id": "3macLQfIKv",
+        "label": "",
+        "max": 100,
+        "maxlength": "20",
+        "minlength": "6",
+        "name": "phone",
+        "pattern": "^\\+?\\d+$",
+        "phone-input-placeholder": "Phone number *",
+        "required": true,
+        "size": "md",
+        "type": "tel",
+        "variant": "countrySelection"
+      },
+      "type": {
+        "resolvedName": "Phone"
+      }
+    },
+    "8DdfdVbwWU": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "To complete your sign up, please provide the following information",
+        "full-width": false,
+        "id": "8DdfdVbwWU",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "Qj7Jze34Ov": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "jNFBRQNhqu",
+        "vunvn4_jAv"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "center",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "Qj7Jze34Ov",
+        "justify": "center",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "0",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "8DdfdVbwWU",
+        "fJkZrzVYgH",
+        "Qj7Jze34Ov",
+        "Sc2XmeaKa8"
+      ],
+      "props": {
+        "align": "center",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "8",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "Sc2XmeaKa8": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "hide-when-empty": true,
+        "id": "Sc2XmeaKa8",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "VZn7G1QGq3": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "vunvn4_jAv",
+      "props": {
+        "auto-submit": true,
+        "children": "Verify",
+        "color": "primary",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "VZn7G1QGq3",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "fJkZrzVYgH": {
+      "custom": {
+        "contextKey": "displayName",
+        "type": "input"
+      },
+      "displayName": "Full Name Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "full-width": true,
+        "id": "fJkZrzVYgH",
+        "label": "",
+        "max": 100,
+        "name": "fullName",
+        "placeholder": "Full Name",
+        "required": false,
+        "size": "md",
+        "type": "text"
+      },
+      "type": {
+        "resolvedName": "FullNameInput"
+      }
+    },
+    "jNFBRQNhqu": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "3macLQfIKv"
+      ],
+      "parent": "Qj7Jze34Ov",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "jNFBRQNhqu",
+        "justify": "center",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "75%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "vunvn4_jAv": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "VZn7G1QGq3"
+      ],
+      "parent": "Qj7Jze34Ov",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "vunvn4_jAv",
+        "justify": "center",
+        "paddingX": "2",
+        "paddingY": "0",
+        "spaceBetween": "0",
+        "width": "25%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    }
+  },
+  "id": "SC2fKgr3ZBc7Tn2RLtueAyiqENrXo",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "VZn7G1QGq3",
+      "label": "Verify",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

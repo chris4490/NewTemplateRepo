@@ -1,0 +1,188 @@
+{
+  "componentsVersion": "2.0.261",
+  "flowId": "combined-flow-v2",
+  "htmlTemplate": {
+    "1sMmkeVxVT": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "align": "center",
+        "data-type": "error-message",
+        "full-width": false,
+        "hide-when-empty": true,
+        "id": "1sMmkeVxVT",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "9NYCC4xZUH": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "9NYCC4xZUH",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "1sMmkeVxVT",
+        "WXFhomMts2",
+        "9NYCC4xZUH",
+        "tfvdfzbxyD"
+      ],
+      "props": {
+        "align": "center",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "8",
+        "space-between": "md",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "WXFhomMts2": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "ZaY3QR-ltq"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "WXFhomMts2",
+        "justify": "start",
+        "paddingX": "4",
+        "paddingY": "2",
+        "spaceBetween": "2",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "ZaY3QR-ltq": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "WXFhomMts2",
+      "props": {
+        "children": "Your account has been banned",
+        "full-width": false,
+        "id": "ZaY3QR-ltq",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "subtitle1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "tfvdfzbxyD": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "uwzCypD1UY"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "center",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "tfvdfzbxyD",
+        "justify": "end",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "uwzCypD1UY": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "tfvdfzbxyD",
+      "props": {
+        "auto-submit": false,
+        "children": "Return to sign in",
+        "color": "primary",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "uwzCypD1UY",
+        "shape": "",
+        "size": "xs",
+        "variant": "link"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    }
+  },
+  "id": "SC2eYkrYOuA5pP8I1tDLbTAo6H3x0",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "uwzCypD1UY",
+      "label": "Return to sign in",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

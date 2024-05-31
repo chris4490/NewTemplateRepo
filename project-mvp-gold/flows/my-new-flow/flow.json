@@ -1,0 +1,63 @@
+{
+  "description": "",
+  "disabled": false,
+  "dsl": {
+    "apiVersion": 0,
+    "startTask": "1",
+    "tasks": {
+      "0": {
+        "ID": "0",
+        "action": "logged-in",
+        "name": "End",
+        "next": {},
+        "type": "automated",
+        "view": {
+          "x": 396,
+          "y": 0
+        }
+      },
+      "1": {
+        "ID": "1",
+        "name": "New Screen",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "-8Na1Idnk9",
+              "taskId": "0"
+            }
+          ]
+        },
+        "screenId": "SC2gv7swE9DrtYB0Yi1VhVdRj1KKS",
+        "type": "screen",
+        "view": {
+          "x": -264,
+          "y": -300
+        }
+      },
+      "start": {
+        "ID": "start",
+        "name": "start",
+        "next": {
+          "rules": [
+            {
+              "taskId": "1"
+            }
+          ]
+        },
+        "view": {
+          "x": -732,
+          "y": -348
+        }
+      }
+    }
+  },
+  "etag": "manual",
+  "fingerprint": false,
+  "id": "my-new-flow",
+  "name": "my new flow",
+  "translate": false,
+  "translateConnectorID": "",
+  "translateSourceLang": "",
+  "translateTargetLangs": [],
+  "widget": false
+}

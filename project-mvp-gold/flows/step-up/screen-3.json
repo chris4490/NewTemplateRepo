@@ -1,0 +1,288 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "step-up",
+  "htmlTemplate": {
+    "MoYs6IGLo1": {
+      "custom": {
+        "subType": "social",
+        "type": "button"
+      },
+      "displayName": "Google Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "lr7QVwWaO2",
+      "props": {
+        "children": "Continue with Google",
+        "data-descope-provider": "google",
+        "data-type": "social",
+        "formNoValidate": true,
+        "full-width": true,
+        "id": "MoYs6IGLo1",
+        "mode": "primary",
+        "size": "md",
+        "startIcon": "google",
+        "startIconColorText": false,
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "GoogleButton"
+      }
+    },
+    "QLItcaT9fe": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Continue",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "QLItcaT9fe",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "nueC_LeHEB",
+        "yW1WLDXQDY",
+        "QLItcaT9fe",
+        "SloKYywNIc",
+        "lr7QVwWaO2",
+        "UZxLbk42B0"
+      ],
+      "props": {
+        "align": "center",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "8",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "Rnig-N9uPU": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Passkey Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "lr7QVwWaO2",
+      "props": {
+        "children": "Continue with Passkeys",
+        "data-type": "biometrics",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "Rnig-N9uPU",
+        "mode": "primary",
+        "size": "md",
+        "startIcon": "passkey",
+        "startIconColorText": true,
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "BiometricsButton"
+      }
+    },
+    "SloKYywNIc": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "OR",
+        "id": "SloKYywNIc",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "UZxLbk42B0": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "id": "UZxLbk42B0",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "Xa-ZeVfQ22": {
+      "custom": {
+        "subType": "social",
+        "type": "button"
+      },
+      "displayName": "Microsoft Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "lr7QVwWaO2",
+      "props": {
+        "children": "Continue with Microsoft",
+        "data-descope-provider": "microsoft",
+        "data-type": "social",
+        "formNoValidate": true,
+        "full-width": true,
+        "id": "Xa-ZeVfQ22",
+        "mode": "primary",
+        "size": "md",
+        "startIcon": "microsoft",
+        "startIconColorText": false,
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "MicrosoftButton"
+      }
+    },
+    "lr7QVwWaO2": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "MoYs6IGLo1",
+        "Xa-ZeVfQ22",
+        "Rnig-N9uPU"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "center",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "lr7QVwWaO2",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "4",
+        "spaceBetween": "1.5",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "nueC_LeHEB": {
+      "custom": {},
+      "displayName": "Logo",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Logo",
+        "height": "100px",
+        "id": "nueC_LeHEB"
+      },
+      "type": {
+        "resolvedName": "Logo"
+      }
+    },
+    "yW1WLDXQDY": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Email Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "data-errormessage-pattern-mismatch": "Must be a valid email",
+        "full-width": true,
+        "id": "yW1WLDXQDY",
+        "label": "",
+        "max": 100,
+        "name": "email",
+        "pattern": "^[\\w._%+-]+@[\\w.-]+\\.[A-Za-z]{2,}$",
+        "placeholder": "Email address *",
+        "required": false,
+        "size": "md",
+        "type": "email"
+      },
+      "type": {
+        "resolvedName": "EmailInput"
+      }
+    }
+  },
+  "id": "SC2fKgr6rfOWiGwQPBwJUPBr2RE3V",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "google",
+      "id": "MoYs6IGLo1",
+      "label": "Continue with Google",
+      "subType": "social",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "QLItcaT9fe",
+      "label": "Continue",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "passkey",
+      "id": "Rnig-N9uPU",
+      "label": "Continue with Passkeys",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "microsoft",
+      "id": "Xa-ZeVfQ22",
+      "label": "Continue with Microsoft",
+      "subType": "social",
+      "type": ""
+    }
+  ]
+}

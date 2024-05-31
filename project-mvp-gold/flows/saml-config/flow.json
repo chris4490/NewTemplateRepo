@@ -1,0 +1,338 @@
+{
+  "description": "Descope SAML Config flow; enables tenant admins to setup SSO/SAML for their tenants in a self service manner",
+  "disabled": false,
+  "dsl": {
+    "apiVersion": 0,
+    "startTask": "5",
+    "tasks": {
+      "11": {
+        "ID": "11",
+        "action": "saml-set-config",
+        "name": "SSO / Set Configuration",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "12"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 2076,
+          "y": 432
+        }
+      },
+      "12": {
+        "ID": "12",
+        "name": "Done",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "d5mcRIUwPL",
+              "taskId": "15"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr83rDvmQJI2OV0JUM9SuN5P",
+        "type": "screen",
+        "view": {
+          "x": 2544,
+          "y": 432
+        }
+      },
+      "15": {
+        "ID": "15",
+        "action": "logged-in",
+        "name": "DONE",
+        "next": {},
+        "type": "automated",
+        "view": {
+          "x": 3000,
+          "y": 480
+        }
+      },
+      "17": {
+        "ID": "17",
+        "name": "Okta Instructions",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "rofROTBRRE",
+              "taskId": "3"
+            },
+            {
+              "interactionId": "FYXoOgS0G6",
+              "taskId": "11"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr4qyOKFemQG52SpBxGKNpzE",
+        "type": "screen",
+        "view": {
+          "x": 1620,
+          "y": 240
+        }
+      },
+      "18": {
+        "ID": "18",
+        "name": "SAML config",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "kN7QTIvXy2",
+              "taskId": "3"
+            },
+            {
+              "interactionId": "DkBECz4mZE",
+              "taskId": "11"
+            },
+            {
+              "interactionId": "999Tr4Ah5q",
+              "taskId": "24"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr7MLxfweMYRuS4cRaWPEZpW",
+        "type": "screen",
+        "view": {
+          "x": 1620,
+          "y": 720
+        }
+      },
+      "19": {
+        "ID": "19",
+        "name": "Google SAML Instructions",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "IbWHUFTU93",
+              "taskId": "3"
+            },
+            {
+              "interactionId": "41Hq2HQcd6",
+              "taskId": "11"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr6CSyVOqgaiVvebKYkOE5UI",
+        "type": "screen",
+        "view": {
+          "x": 1608,
+          "y": -324
+        }
+      },
+      "20": {
+        "ID": "20",
+        "name": "Enter Company Domain",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "KksBJvpyf5",
+              "taskId": "3"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr6TDxPeEeaGB1Fscff93IWt",
+        "type": "screen",
+        "view": {
+          "x": 696,
+          "y": 432
+        }
+      },
+      "21": {
+        "ID": "21",
+        "name": "Azure AD Instructions",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "_6axNmxfxS",
+              "taskId": "3"
+            },
+            {
+              "interactionId": "1DEJSWcm48",
+              "taskId": "11"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr5ZrgTP1zDWrPDFH8wvLhdJ",
+        "type": "screen",
+        "view": {
+          "x": 1620,
+          "y": 24
+        }
+      },
+      "22": {
+        "ID": "22",
+        "name": "SAML custom attributes ",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "zJ9Ear5qdx",
+              "taskId": "3"
+            },
+            {
+              "interactionId": "Gu3QI-jpOL",
+              "taskId": "18"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr68hwuCk2gi21WfUnqgTPkw",
+        "type": "screen",
+        "view": {
+          "x": 1188,
+          "y": 756
+        }
+      },
+      "23": {
+        "ID": "23",
+        "name": "JumpCloud Instructions",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "2VLnbirnnI",
+              "taskId": "3"
+            },
+            {
+              "interactionId": "sUaYBATBG4",
+              "taskId": "11"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr4UIiqSNn3jXgoFHkLKlOvn",
+        "type": "screen",
+        "view": {
+          "x": 1608,
+          "y": 480
+        }
+      },
+      "24": {
+        "ID": "24",
+        "name": "SAML config URL metadata",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "tPwS0CGwJj",
+              "taskId": "22"
+            },
+            {
+              "interactionId": "aYVvUgmT5i",
+              "taskId": "11"
+            },
+            {
+              "interactionId": "4Sx5hkM4DI",
+              "taskId": "18"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr345WkMQfGUYbvQxI9f3xV5",
+        "type": "screen",
+        "view": {
+          "x": 1620,
+          "y": 1068
+        }
+      },
+      "25": {
+        "ID": "25",
+        "name": "Ping Instructions",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "EzMCyLH7Cg",
+              "taskId": "3"
+            },
+            {
+              "interactionId": "FF6Sd0OHkh",
+              "taskId": "11"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr6xhNQcHqi2ZbWDBn157TAt",
+        "type": "screen",
+        "view": {
+          "x": 1620,
+          "y": -552
+        }
+      },
+      "3": {
+        "ID": "3",
+        "name": "Choose IDP",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "EwD9jAnHUF",
+              "taskId": "21"
+            },
+            {
+              "interactionId": "JyLkIaIHJw",
+              "taskId": "19"
+            },
+            {
+              "interactionId": "LUsBdmW4o7",
+              "taskId": "23"
+            },
+            {
+              "interactionId": "tzpYNAFZhM",
+              "taskId": "17"
+            },
+            {
+              "interactionId": "dONGlcyuSr",
+              "taskId": "25"
+            },
+            {
+              "interactionId": "kzlbaAtdQI",
+              "taskId": "22"
+            }
+          ]
+        },
+        "screenId": "SC2fKgr48xVtOOJyqcRK1GgkKc18b",
+        "type": "screen",
+        "view": {
+          "x": 1152,
+          "y": 348
+        }
+      },
+      "5": {
+        "ID": "5",
+        "action": "saml-get-config",
+        "name": "SAML / Get Config",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "success",
+              "taskId": "20"
+            }
+          ]
+        },
+        "type": "automated",
+        "view": {
+          "x": 240,
+          "y": 432
+        }
+      },
+      "start": {
+        "ID": "start",
+        "next": {
+          "rules": [
+            {
+              "taskId": "5"
+            }
+          ]
+        },
+        "view": {
+          "x": 12,
+          "y": 480
+        }
+      }
+    }
+  },
+  "etag": "\"f9529978ac51ebd367fa7fcfc1df7c03\"",
+  "fingerprint": false,
+  "id": "saml-config",
+  "name": "SAML Config",
+  "translate": false,
+  "translateConnectorID": "",
+  "translateSourceLang": "",
+  "translateTargetLangs": [],
+  "widget": false
+}

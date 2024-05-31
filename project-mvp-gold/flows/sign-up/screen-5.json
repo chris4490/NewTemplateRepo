@@ -1,0 +1,428 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "sign-up",
+  "htmlTemplate": {
+    "-l6OZMdABa": {
+      "custom": {},
+      "displayName": "Logo",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Logo",
+        "height": "100px",
+        "id": "-l6OZMdABa"
+      },
+      "type": {
+        "resolvedName": "Logo"
+      }
+    },
+    "02Kl8WTFZ5": {
+      "custom": {
+        "subType": "social",
+        "type": "button"
+      },
+      "displayName": "Google Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "FDDGC3aUBc",
+      "props": {
+        "children": "Sign Up with Google",
+        "data-descope-provider": "google",
+        "data-type": "social",
+        "formNoValidate": true,
+        "full-width": true,
+        "id": "02Kl8WTFZ5",
+        "mode": "primary",
+        "size": "md",
+        "startIcon": "google",
+        "startIconColorText": false,
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "GoogleButton"
+      }
+    },
+    "2OCII5hm9H": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "U9W1rkVcxF",
+      "props": {
+        "children": "and",
+        "full-width": false,
+        "id": "2OCII5hm9H",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "DjpOasHRGj": {
+      "custom": {},
+      "displayName": "Link",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "U9W1rkVcxF",
+      "props": {
+        "children": "Privacy Statement",
+        "full-width": false,
+        "href": "",
+        "id": "DjpOasHRGj",
+        "italic": false,
+        "mode": "primary",
+        "target": "_blank",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Link"
+      }
+    },
+    "EwRRw3ALxR": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Email Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "data-errormessage-pattern-mismatch": "Must be a valid email",
+        "full-width": true,
+        "id": "EwRRw3ALxR",
+        "label": "",
+        "max": 100,
+        "name": "email",
+        "pattern": "^[\\w._%+-]+@[\\w.-]+\\.[A-Za-z]{2,}$",
+        "placeholder": "Email address *",
+        "required": true,
+        "size": "md",
+        "type": "email"
+      },
+      "type": {
+        "resolvedName": "EmailInput"
+      }
+    },
+    "FDDGC3aUBc": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "02Kl8WTFZ5",
+        "mTQteMea1a",
+        "aB3dP1qvtd"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "center",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "FDDGC3aUBc",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "4",
+        "spaceBetween": "1.5",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "KaO9Md5IFq": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "U9W1rkVcxF",
+      "props": {
+        "children": "By signing up, I agree to the Company's",
+        "full-width": false,
+        "id": "KaO9Md5IFq",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "QVd_bDixgC": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Welcome!",
+        "full-width": false,
+        "id": "QVd_bDixgC",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "h3"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "-l6OZMdABa",
+        "QVd_bDixgC",
+        "EwRRw3ALxR",
+        "U9W1rkVcxF",
+        "wIrcYk8xoN",
+        "s8rpWZhtWW",
+        "FDDGC3aUBc",
+        "kRbAopdX79"
+      ],
+      "props": {
+        "align": "center",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "8",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "U9W1rkVcxF": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "KaO9Md5IFq",
+        "DjpOasHRGj",
+        "2OCII5hm9H",
+        "XDn23gHmb1"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "U9W1rkVcxF",
+        "justify": "center",
+        "paddingX": "4",
+        "paddingY": "1",
+        "spaceBetween": "0.5",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "XDn23gHmb1": {
+      "custom": {},
+      "displayName": "Link",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "U9W1rkVcxF",
+      "props": {
+        "children": "Terms of Service",
+        "full-width": false,
+        "href": "",
+        "id": "XDn23gHmb1",
+        "italic": false,
+        "mode": "primary",
+        "target": "_blank",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Link"
+      }
+    },
+    "aB3dP1qvtd": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Passkey Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "FDDGC3aUBc",
+      "props": {
+        "children": "Sign Up with Passkeys",
+        "data-type": "biometrics",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "aB3dP1qvtd",
+        "mode": "primary",
+        "size": "md",
+        "startIcon": "passkey",
+        "startIconColorText": true,
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "PasskeyButton"
+      }
+    },
+    "kRbAopdX79": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "id": "kRbAopdX79",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "mTQteMea1a": {
+      "custom": {
+        "subType": "social",
+        "type": "button"
+      },
+      "displayName": "Microsoft Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "FDDGC3aUBc",
+      "props": {
+        "children": "Sign Up with Microsoft",
+        "data-descope-provider": "microsoft",
+        "data-type": "social",
+        "formNoValidate": true,
+        "full-width": true,
+        "id": "mTQteMea1a",
+        "mode": "primary",
+        "size": "md",
+        "startIcon": "microsoft",
+        "startIconColorText": false,
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "MicrosoftButton"
+      }
+    },
+    "s8rpWZhtWW": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "OR",
+        "id": "s8rpWZhtWW",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "wIrcYk8xoN": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Sign Up",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": true,
+        "id": "wIrcYk8xoN",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    }
+  },
+  "id": "SC2fKgqwciqUDQdx16AJqOHLtYK3r",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "google",
+      "id": "02Kl8WTFZ5",
+      "label": "Sign Up with Google",
+      "subType": "social",
+      "type": ""
+    },
+    {
+      "icon": "microsoft",
+      "id": "mTQteMea1a",
+      "label": "Sign Up with Microsoft",
+      "subType": "social",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "wIrcYk8xoN",
+      "label": "Sign Up",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "passkey",
+      "id": "aB3dP1qvtd",
+      "label": "Sign Up with Passkeys",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

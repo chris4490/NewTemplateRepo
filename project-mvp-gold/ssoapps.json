@@ -1,0 +1,33 @@
+{
+  "applications": [
+    {
+      "appType": "oidc",
+      "description": "Default OIDC APP",
+      "enabled": true,
+      "id": "descope-default-oidc",
+      "logo": "",
+      "name": "OIDC default application",
+      "oidcSettings": {
+        "claims": [],
+        "loginPageUrl": ""
+      },
+      "samlSettings": {
+        "acsAllowedCallbacks": [],
+        "acsUrl": "",
+        "attributeMapping": [],
+        "certificate": "",
+        "entityId": "",
+        "groupsMapping": [],
+        "idpCert": "",
+        "idpEntityId": "",
+        "idpMetadataUrl": "",
+        "idpSsoUrl": "",
+        "loginPageUrl": "",
+        "metadataUrl": "",
+        "subjectNameIdFormat": "",
+        "subjectNameIdType": "",
+        "useMetadataInfo": false
+      }
+    }
+  ]
+}

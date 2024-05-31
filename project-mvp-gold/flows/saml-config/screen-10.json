@@ -1,0 +1,303 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "saml-config",
+  "htmlTemplate": {
+    "2I4l4bRvd4": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "SAML 2.0 configuration",
+        "full-width": false,
+        "id": "2I4l4bRvd4",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "h2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "34xFVwDhku": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Entity ID Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "full-width": true,
+        "id": "34xFVwDhku",
+        "label": "Identity Provider Issuer ",
+        "max": 100,
+        "name": "entityId",
+        "placeholder": "Identity Provider Issuer ",
+        "required": true,
+        "size": "md",
+        "type": "text"
+      },
+      "type": {
+        "resolvedName": "EntityIdInput"
+      }
+    },
+    "6q77YFwA-j": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "999Tr4Ah5q"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "6q77YFwA-j",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "999Tr4Ah5q": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "6q77YFwA-j",
+      "props": {
+        "children": "Switch to IdP metadata URL configuration",
+        "data-type": "button",
+        "formNoValidate": true,
+        "full-width": false,
+        "id": "999Tr4Ah5q",
+        "mode": "primary",
+        "size": "md",
+        "variant": "link"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "DkBECz4mZE": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "VxcJkwig6T",
+      "props": {
+        "children": "Next",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "DkBECz4mZE",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "KUecWg162j": {
+      "custom": {},
+      "displayName": "Certificate Textarea",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "full-width": true,
+        "id": "KUecWg162j",
+        "label": "X.509 Certificate",
+        "name": "idpCert",
+        "placeholder": "X.509 Certificate",
+        "required": true
+      },
+      "type": {
+        "resolvedName": "CertificateTextarea"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "2I4l4bRvd4",
+        "grXiDjI2zD",
+        "34xFVwDhku",
+        "KUecWg162j",
+        "6q77YFwA-j",
+        "qOxO2_DBPs",
+        "VxcJkwig6T"
+      ],
+      "props": {
+        "align": "start",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "6",
+        "paddingY": "8",
+        "spaceBetween": "9",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "VxcJkwig6T": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "kN7QTIvXy2",
+        "DkBECz4mZE"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "VxcJkwig6T",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "grXiDjI2zD": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Login URL Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "data-errormessage-pattern-mismatch": "Must be a valid URL",
+        "full-width": true,
+        "id": "grXiDjI2zD",
+        "label": "Identity Provider Single Sign-On URL",
+        "max": 100,
+        "name": "idpURL",
+        "placeholder": "Identity Provider Single Sign-On URL",
+        "required": true,
+        "size": "md",
+        "type": "url"
+      },
+      "type": {
+        "resolvedName": "LoginUrlInput"
+      }
+    },
+    "kN7QTIvXy2": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "VxcJkwig6T",
+      "props": {
+        "children": "Back",
+        "data-type": "button",
+        "formNoValidate": true,
+        "full-width": false,
+        "id": "kN7QTIvXy2",
+        "mode": "primary",
+        "size": "md",
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "qOxO2_DBPs": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "id": "qOxO2_DBPs",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    }
+  },
+  "id": "SC2fKgr7MLxfweMYRuS4cRaWPEZpW",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "DkBECz4mZE",
+      "label": "Next",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "kN7QTIvXy2",
+      "label": "Back",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "999Tr4Ah5q",
+      "label": "Switch to IdP metadata URL configuration",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

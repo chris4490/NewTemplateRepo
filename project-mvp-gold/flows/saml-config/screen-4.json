@@ -1,0 +1,1106 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "saml-config",
+  "htmlTemplate": {
+    "1ZtmsnHzWr": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "1ZtmsnHzWr",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/305e4231-8baf-40aa-28af-8164744a7600/okta"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "2RyMdd45wR": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "2. Select \"Create App Integration\".",
+        "full-width": false,
+        "id": "2RyMdd45wR",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "3E1KcGpFnB": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "3E1KcGpFnB",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/95645c4e-0cad-4502-528e-92e2a8929800/okta"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "3kcfDE0yv6": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "12. Copy the values for the following attributes and paste them below:",
+        "full-width": false,
+        "id": "3kcfDE0yv6",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "4yl8tkMM2g": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "4yl8tkMM2g",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "5XBdn54wbS": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "6. Enter the following value for \"Audience URI (SP Entity ID)\":",
+        "full-width": false,
+        "id": "5XBdn54wbS",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "7SW2Wt6DAZ": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "4. Enter an \"App Name\" and click Next.",
+        "full-width": false,
+        "id": "7SW2Wt6DAZ",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "7yn2GH1P1V": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "7yn2GH1P1V",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/edc8bde5-3794-45e4-5ccf-b50491cb9e00/okta"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "8QljpACRSd": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "90tlkHhYvu",
+      "props": {
+        "children": "Identity Provider Single Sign-On URL",
+        "full-width": false,
+        "id": "8QljpACRSd",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "90tlkHhYvu": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "8QljpACRSd",
+        "JyatsPljOA",
+        "jWvyKMoS49"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "90tlkHhYvu",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "2",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "DtzUXzZVI1": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "DtzUXzZVI1",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "FYXoOgS0G6": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "y36od-VTg1",
+      "props": {
+        "children": "Next",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "FYXoOgS0G6",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "FyGiQEZGbh": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "FyGiQEZGbh",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/cb5ed3e7-fe99-460b-c065-67a0d14a8800/okta"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "JZdnuS8ULE": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Login URL Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "data-errormessage-pattern-mismatch": "Must be a valid URL",
+        "full-width": true,
+        "id": "JZdnuS8ULE",
+        "label": "Identity Provider Single Sign-On URL",
+        "max": 100,
+        "name": "idpURL",
+        "placeholder": "Identity Provider Single Sign-On URL",
+        "required": true,
+        "size": "md",
+        "type": "url"
+      },
+      "type": {
+        "resolvedName": "LoginUrlInput"
+      }
+    },
+    "JyatsPljOA": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "90tlkHhYvu",
+      "props": {
+        "children": "Identity Provider Issuer ",
+        "full-width": false,
+        "id": "JyatsPljOA",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "KVupaJdWdk": {
+      "custom": {
+        "type": "input"
+      },
+      "displayName": "Entity ID Input",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "full-width": true,
+        "id": "KVupaJdWdk",
+        "label": "Identity Provider Issuer ",
+        "max": 100,
+        "name": "entityId",
+        "placeholder": "Identity Provider Issuer ",
+        "required": true,
+        "size": "md",
+        "type": "text"
+      },
+      "type": {
+        "resolvedName": "EntityIdInput"
+      }
+    },
+    "KakGKmjGmc": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "KakGKmjGmc",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "Ki7A-Rpf1I": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "3. Select \"SAML 2.0\" and click Next.",
+        "full-width": false,
+        "id": "Ki7A-Rpf1I",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "MJnPXk-Ytj": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "5. Enter the following value for \"Single sign on URL\":",
+        "full-width": false,
+        "id": "MJnPXk-Ytj",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "PKNW93EwYt": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "PKNW93EwYt",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/5b79aa3a-6451-4652-02ab-aa7e8eb74d00/okta"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "PeSrlVYGc2": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "PeSrlVYGc2",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/2989f870-057d-4b66-2546-c8131ace6100/okta"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "QZdWEwXkc4": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "7. Scroll down to the “Attribute Statements” section and add the following key-value pairs, and then click Next.",
+        "full-width": false,
+        "id": "QZdWEwXkc4",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "UrJW7NM8g3",
+        "TuxMD-Ah41",
+        "2RyMdd45wR",
+        "g80goUscWv",
+        "cVjOFHYcNu",
+        "Ki7A-Rpf1I",
+        "ScU7qWX6Na",
+        "flkDKDwsAg",
+        "7SW2Wt6DAZ",
+        "1ZtmsnHzWr",
+        "4yl8tkMM2g",
+        "MJnPXk-Ytj",
+        "rppbMzGL0u",
+        "5XBdn54wbS",
+        "huOjwnNxnD",
+        "FyGiQEZGbh",
+        "oi5uNi52ub",
+        "QZdWEwXkc4",
+        "eZ1QUB83cr",
+        "YCuP0pnWtn",
+        "ol5nYju5YD",
+        "uLaZRGxH_L",
+        "vpCS2Och9m",
+        "KakGKmjGmc",
+        "qBzIyBFg0G",
+        "pEhhvsDgdc",
+        "3E1KcGpFnB",
+        "DtzUXzZVI1",
+        "qJJJ0HtNkP",
+        "7yn2GH1P1V",
+        "tDClcO1IQC",
+        "lzVD-FY20l",
+        "PKNW93EwYt",
+        "_txZCnNDM5",
+        "3kcfDE0yv6",
+        "90tlkHhYvu",
+        "PeSrlVYGc2",
+        "JZdnuS8ULE",
+        "KVupaJdWdk",
+        "gfhKcXlv--",
+        "biEophOswC",
+        "y36od-VTg1"
+      ],
+      "props": {
+        "align": "start",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "8",
+        "paddingY": "8",
+        "spaceBetween": "8",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "ScU7qWX6Na": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "ScU7qWX6Na",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/8d4f769a-ca10-4dde-2d82-3480c2ee4300/okta"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "TuxMD-Ah41": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "1. Log in to Okta, go to the admin dashboard, and select \"Applications\" in the navigation panel.",
+        "full-width": false,
+        "id": "TuxMD-Ah41",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "UrJW7NM8g3": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Okta SAML configuration",
+        "full-width": false,
+        "id": "UrJW7NM8g3",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "h2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "YCuP0pnWtn": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "YCuP0pnWtn",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/9233e628-56e0-494f-24ea-6c12e5a9c200/okta"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "_txZCnNDM5": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "_txZCnNDM5",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "biEophOswC": {
+      "custom": {},
+      "displayName": "Error Message",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "data-type": "error-message",
+        "full-width": false,
+        "id": "biEophOswC",
+        "italic": false,
+        "mode": "error",
+        "text-align": "center",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "ErrorMessage"
+      }
+    },
+    "cVjOFHYcNu": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "cVjOFHYcNu",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "dTMEgBZTrq": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "eZ1QUB83cr",
+      "props": {
+        "children": "Value = user.firstName",
+        "full-width": false,
+        "id": "dTMEgBZTrq",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "dkbW0IpgDe": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "eZ1QUB83cr",
+      "props": {
+        "children": "Name = FirstName",
+        "full-width": false,
+        "id": "dkbW0IpgDe",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "eZ1QUB83cr": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "dkbW0IpgDe",
+        "dTMEgBZTrq"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "eZ1QUB83cr",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "2",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "flkDKDwsAg": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "flkDKDwsAg",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "g80goUscWv": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "g80goUscWv",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/21f5519c-fd3f-4495-6875-51c4187fa000/okta"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "gfhKcXlv--": {
+      "custom": {},
+      "displayName": "Certificate Textarea",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "bordered": true,
+        "full-width": true,
+        "id": "gfhKcXlv--",
+        "label": "X.509 Certificate",
+        "name": "idpCert",
+        "placeholder": "X.509 Certificate",
+        "required": true
+      },
+      "type": {
+        "resolvedName": "CertificateTextarea"
+      }
+    },
+    "huOjwnNxnD": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "{{sso.descopeEntityId}}",
+        "full-width": true,
+        "id": "huOjwnNxnD",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "jWvyKMoS49": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "90tlkHhYvu",
+      "props": {
+        "children": "X.509 Certificate",
+        "full-width": false,
+        "id": "jWvyKMoS49",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "lzVD-FY20l": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "11. Click on \"View SAML setup instructions\".",
+        "full-width": false,
+        "id": "lzVD-FY20l",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "oi5uNi52ub": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "oi5uNi52ub",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "ol5nYju5YD": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "ol5nYju5YD",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "pEhhvsDgdc": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Click on the \"Assignments\" tab and assign the users or groups you require. ",
+        "full-width": false,
+        "id": "pEhhvsDgdc",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "qBzIyBFg0G": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "9. To give users permission to authenticate via this SAML app, you will need to assign users or groups.",
+        "full-width": false,
+        "id": "qBzIyBFg0G",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "qJJJ0HtNkP": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "10. Click on the \"Sign On\" tab and scroll down to the \"SAML Signing Certificates\".",
+        "full-width": false,
+        "id": "qJJJ0HtNkP",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "rofROTBRRE": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "y36od-VTg1",
+      "props": {
+        "children": "Back",
+        "data-type": "button",
+        "formNoValidate": true,
+        "full-width": false,
+        "id": "rofROTBRRE",
+        "mode": "primary",
+        "size": "md",
+        "variant": "outline"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "rppbMzGL0u": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "{{sso.acsUrl}}",
+        "full-width": true,
+        "id": "rppbMzGL0u",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "subtitle2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "tDClcO1IQC": {
+      "custom": {},
+      "displayName": "Divider",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "",
+        "id": "tDClcO1IQC",
+        "italic": false,
+        "mode": "primary",
+        "variant": "body1",
+        "vertical": false
+      },
+      "type": {
+        "resolvedName": "Divider"
+      }
+    },
+    "uLaZRGxH_L": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "8. Select “I’m an Okta customer adding an internal app” from the options menu, and then click Finish.",
+        "full-width": false,
+        "id": "uLaZRGxH_L",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "vpCS2Och9m": {
+      "custom": {},
+      "displayName": "Image",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "alt": "Image",
+        "id": "vpCS2Och9m",
+        "src": "https://static.descope.com/cdn-cgi/imagedelivery/_J7OTzhV4khm6cMYdtfbtA/03d4105a-dfa7-4d51-d62d-8991c3bd9c00/okta"
+      },
+      "type": {
+        "resolvedName": "Image"
+      }
+    },
+    "y36od-VTg1": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "rofROTBRRE",
+        "FYXoOgS0G6"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "y36od-VTg1",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    }
+  },
+  "id": "SC2fKgr4qyOKFemQG52SpBxGKNpzE",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "FYXoOgS0G6",
+      "label": "Next",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "rofROTBRRE",
+      "label": "Back",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

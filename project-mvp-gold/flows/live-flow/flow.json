@@ -1,0 +1,63 @@
+{
+  "description": "",
+  "disabled": false,
+  "dsl": {
+    "apiVersion": 0,
+    "startTask": "1",
+    "tasks": {
+      "0": {
+        "ID": "0",
+        "action": "logged-in",
+        "name": "End",
+        "next": {},
+        "type": "automated",
+        "view": {
+          "x": 396,
+          "y": 0
+        }
+      },
+      "1": {
+        "ID": "1",
+        "name": "New Screen",
+        "next": {
+          "rules": [
+            {
+              "interactionId": "HsBa0ZCLlS",
+              "taskId": "0"
+            }
+          ]
+        },
+        "screenId": "SC2gvL6RnZS33XMSnRZFkBKsIXcok",
+        "type": "screen",
+        "view": {
+          "x": -264,
+          "y": -48
+        }
+      },
+      "start": {
+        "ID": "start",
+        "name": "start",
+        "next": {
+          "rules": [
+            {
+              "taskId": "1"
+            }
+          ]
+        },
+        "view": {
+          "x": -696,
+          "y": 0
+        }
+      }
+    }
+  },
+  "etag": "manual",
+  "fingerprint": false,
+  "id": "live-flow",
+  "name": "live-flow",
+  "translate": false,
+  "translateConnectorID": "",
+  "translateSourceLang": "",
+  "translateTargetLangs": [],
+  "widget": false
+}

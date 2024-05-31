@@ -1,0 +1,370 @@
+{
+  "componentsVersion": "2.0.241",
+  "flowId": "saml-config",
+  "htmlTemplate": {
+    "6ZLaXdeuhY": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "nwCKubnwER",
+        "WEDhbRWncp"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "6ZLaXdeuhY",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "EwD9jAnHUF": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "WEDhbRWncp",
+      "props": {
+        "children": "Azure AD",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "EwD9jAnHUF",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "JyLkIaIHJw": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "WEDhbRWncp",
+      "props": {
+        "children": "Google SAML",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "JyLkIaIHJw",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "K9yhVsX2KF": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "N65OqLLHq0",
+        "kzlbaAtdQI"
+      ],
+      "parent": "ROOT",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "K9yhVsX2KF",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "LUsBdmW4o7": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "WEDhbRWncp",
+      "props": {
+        "children": "JumpCloud",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "LUsBdmW4o7",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "N65OqLLHq0": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "K9yhVsX2KF",
+      "props": {
+        "children": "Or go to configuration directly",
+        "full-width": false,
+        "id": "N65OqLLHq0",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "ROOT": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "qK9Ll5O10i",
+        "6ZLaXdeuhY",
+        "K9yhVsX2KF"
+      ],
+      "props": {
+        "align": "start",
+        "background": "",
+        "data-editor-type": "container",
+        "direction": "column",
+        "id": "ROOT",
+        "justify": "center",
+        "paddingX": "8",
+        "paddingY": "8",
+        "spaceBetween": "8",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "WEDhbRWncp": {
+      "custom": {},
+      "displayName": "Container",
+      "hidden": false,
+      "isCanvas": true,
+      "linkedNodes": {},
+      "nodes": [
+        "tzpYNAFZhM",
+        "JyLkIaIHJw",
+        "EwD9jAnHUF",
+        "LUsBdmW4o7",
+        "dONGlcyuSr"
+      ],
+      "parent": "6ZLaXdeuhY",
+      "props": {
+        "align": "start",
+        "background": "#ffffff00",
+        "data-editor-type": "container",
+        "direction": "row",
+        "id": "WEDhbRWncp",
+        "justify": "start",
+        "paddingX": "0",
+        "paddingY": "0",
+        "spaceBetween": "4",
+        "width": "100%"
+      },
+      "type": {
+        "resolvedName": "Container"
+      }
+    },
+    "dONGlcyuSr": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "WEDhbRWncp",
+      "props": {
+        "children": "Ping",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "dONGlcyuSr",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "kzlbaAtdQI": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "K9yhVsX2KF",
+      "props": {
+        "children": "SAML 2.0",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "kzlbaAtdQI",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    },
+    "nwCKubnwER": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "6ZLaXdeuhY",
+      "props": {
+        "children": "Show the IdP's instructions and configuration",
+        "full-width": false,
+        "id": "nwCKubnwER",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "left",
+        "variant": "body1"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "qK9Ll5O10i": {
+      "custom": {},
+      "displayName": "Text",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "ROOT",
+      "props": {
+        "children": "Select Identity Provider (IdP)",
+        "full-width": false,
+        "id": "qK9Ll5O10i",
+        "italic": false,
+        "mode": "primary",
+        "text-align": "center",
+        "variant": "h2"
+      },
+      "type": {
+        "resolvedName": "Text"
+      }
+    },
+    "tzpYNAFZhM": {
+      "custom": {
+        "type": "button"
+      },
+      "displayName": "Button",
+      "hidden": false,
+      "isCanvas": false,
+      "linkedNodes": {},
+      "nodes": [],
+      "parent": "WEDhbRWncp",
+      "props": {
+        "children": "Okta",
+        "data-type": "button",
+        "formNoValidate": false,
+        "full-width": false,
+        "id": "tzpYNAFZhM",
+        "mode": "primary",
+        "size": "md",
+        "variant": "contained"
+      },
+      "type": {
+        "resolvedName": "Button"
+      }
+    }
+  },
+  "id": "SC2fKgr48xVtOOJyqcRK1GgkKc18b",
+  "inputs": [],
+  "interactions": [
+    {
+      "icon": "",
+      "id": "EwD9jAnHUF",
+      "label": "Azure AD",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "JyLkIaIHJw",
+      "label": "Google SAML",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "LUsBdmW4o7",
+      "label": "JumpCloud",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "kzlbaAtdQI",
+      "label": "SAML 2.0",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "tzpYNAFZhM",
+      "label": "Okta",
+      "subType": "",
+      "type": ""
+    },
+    {
+      "icon": "",
+      "id": "dONGlcyuSr",
+      "label": "Ping",
+      "subType": "",
+      "type": ""
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "configuration": {
+    "auditFilters": [],
+    "authentication": {
+      "apiKey": {},
+      "basic": {},
+      "method": "bearerToken"
+    },
+    "baseUrl": "https://local.co",
+    "headers": [],
+    "insecure": false
+  },
+  "contentVersion": "",
+  "description": "sdaf",
+  "id": "CI2hC5bhEpBc6F1BXvLYWJiyAFCCl",
+  "name": "weqf",
+  "status": "enabled",
+  "templateId": "audit-webhook"
+}

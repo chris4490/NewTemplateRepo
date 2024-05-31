@@ -1,0 +1,115 @@
+{
+  "mapping": {
+    "auth/enchantedlink.json": {
+      "emailTemplates": [
+        {
+          "body": "body-cb33f475e8a99ffec75956af2af21589db8f68c5a224d50280ce88733486a9a0.html"
+        }
+      ]
+    },
+    "auth/magiclink.json": {
+      "emailTemplates": [
+        {
+          "body": "body-71e7fb19f59292fcbf3b3a37bd29b9dfc36bb3c6d77cddea21f11471f58f729a.html"
+        }
+      ]
+    },
+    "auth/password.json": {
+      "emailTemplates": [
+        {
+          "body": "body-ab217e47175f9de744330d15167731cdf4db3b3a2181ae99995f6bca14d7e9b3.html"
+        }
+      ]
+    },
+    "flows/add-passkeys/screen-2.json": {
+      "htmlTemplate": {
+        "lERVhcQ0Ds": {
+          "props": {
+            "src": "img-bf5070634317dab3ee177753e2d5735905f522ee7916c3dcdf19ecd4865363d3.svg"
+          }
+        }
+      }
+    },
+    "flows/sign-in/screen-2.json": {
+      "htmlTemplate": {
+        "PUZgvFyUAB": {
+          "props": {
+            "src": "img-0a427e4128082ea77b269733eaefb5caeb5f75c073dadcd217540009d030d5a5.png"
+          }
+        }
+      }
+    },
+    "flows/sign-up-or-in/screen-10.json": {
+      "htmlTemplate": {
+        "PUZgvFyUAB": {
+          "props": {
+            "src": "img-0a427e4128082ea77b269733eaefb5caeb5f75c073dadcd217540009d030d5a5.png"
+          }
+        }
+      }
+    },
+    "flows/sign-up-or-in/screen-3.json": {
+      "htmlTemplate": {
+        "UZHgESPGoK": {
+          "props": {
+            "src": "img-0a427e4128082ea77b269733eaefb5caeb5f75c073dadcd217540009d030d5a5.png"
+          }
+        }
+      }
+    },
+    "flows/sign-up-or-in/screen-7.json": {
+      "htmlTemplate": {
+        "PUZgvFyUAB": {
+          "props": {
+            "src": "img-0a427e4128082ea77b269733eaefb5caeb5f75c073dadcd217540009d030d5a5.png"
+          }
+        }
+      }
+    },
+    "flows/sign-up-or-in/screen-8.json": {
+      "htmlTemplate": {
+        "_F5AIo-MRb": {
+          "props": {
+            "src": "img-bf5070634317dab3ee177753e2d5735905f522ee7916c3dcdf19ecd4865363d3.svg"
+          }
+        }
+      }
+    },
+    "flows/sign-up/screen-3.json": {
+      "htmlTemplate": {
+        "kPcVNa55jO": {
+          "props": {
+            "src": "img-0a427e4128082ea77b269733eaefb5caeb5f75c073dadcd217540009d030d5a5.png"
+          }
+        }
+      }
+    },
+    "flows/sign-up/screen-4.json": {
+      "htmlTemplate": {
+        "PUZgvFyUAB": {
+          "props": {
+            "src": "img-0a427e4128082ea77b269733eaefb5caeb5f75c073dadcd217540009d030d5a5.png"
+          }
+        }
+      }
+    },
+    "flows/sign-up/screen-7.json": {
+      "htmlTemplate": {
+        "PUZgvFyUAB": {
+          "props": {
+            "src": "img-0a427e4128082ea77b269733eaefb5caeb5f75c073dadcd217540009d030d5a5.png"
+          }
+        }
+      }
+    },
+    "flows/step-up/screen-1.json": {
+      "htmlTemplate": {
+        "PUZgvFyUAB": {
+          "props": {
+            "src": "img-0a427e4128082ea77b269733eaefb5caeb5f75c073dadcd217540009d030d5a5.png"
+          }
+        }
+      }
+    }
+  }
+}
